@@ -1,42 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f7f3ef;
-  color: #222;
+  font-family: Arial, sans-serif;
+  background: #f5f1ea;
+  color: #1f1f1f;
+  line-height: 1.7;
 }
 
-header {
+.hero {
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background:
+    linear-gradient(rgba(20, 20, 20, 0.35), rgba(20, 20, 20, 0.35)),
+    linear-gradient(135deg, #3f4a3c, #8c7558, #d8c8b0);
+  color: white;
   text-align: center;
-  padding: 40px 20px;
-  background: #e9dfd3;
 }
 
-h1 {
-  margin-bottom: 10px;
+.hero-content {
+  max-width: 850px;
 }
 
-.gallery {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+.brand {
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  opacity: 0.9;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+.hero h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  line-height: 1.15;
 }
 
-.card img {
+.intro {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.section-title p {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #8a6b52;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.art-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: #fffdf9;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+}
+
+.art-image img {
   width: 100%;
-  border-radius: 8px;
+  display: block;
+  border-radius: 16px;
 }
 
-.card a {
+.art-text {
+  padding: 10px 0;
+}
+
+.tag {
   display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #8a4b2a;
-  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #efe4d5;
+  color: #7b5a40;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.art-text h3 {
+  margin: 0 0 8px;
+  font-size: 34px;
+}
+
+.artist-line {
+  margin: 0 0 22px;
+  color: #7a7a7a;
+  font-size: 15px;
+}
+
+.art-text p {
+  margin-bottom: 18px;
+  font-size: 17px;
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .art-card {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 50px 16px;
+  }
 }
