@@ -3,261 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M·Art — Regards sensibles</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <title>M-Art</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- PROGRESS BAR -->
-  <div class="progress-bar" id="progressBar"></div>
-
-  <!-- PAGE TRANSITION OVERLAY -->
-  <div class="page-transition" id="pageTransition"></div>
-
-  <!-- NAVIGATION -->
-  <nav class="nav" id="mainNav">
-    <a href="index.html" class="nav-brand">M·Art</a>
-    <div class="nav-center">
-      <span class="nav-counter">1 œuvre · En cours</span>
-    </div>
-    <div class="nav-links">
-      <a href="index.html" class="nav-link active">Œuvres</a>
-      <a href="presentation.html" class="nav-link">À propos</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-noise"></div>
-    <div class="hero-parallax-img" id="heroParallax"></div>
-
+  <header class="hero">
     <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span class="eyebrow-line"></span>
-        <span class="eyebrow-text">Portfolio artistique</span>
-      </div>
-      <h1 class="hero-title">
-        <em>Une sélection</em><br>
-        sensible d'œuvres
-      </h1>
-      <p class="hero-sub">
-        Chaque œuvre choisie pour ce qu'elle provoque — une émotion, une question, un silence.
+      <p class="brand">M-Art</p>
+      <h1>Une sélection sensible d'oeuvres et de regards personnels</h1>
+      <p class="intro">
+        M-Art est un espace dédié aux oeuvres qui marquent, intriguent ou touchent.
+        Chaque publication présente une oeuvre choisie et un commentaire personnel qui en prolonge l'émotion.
       </p>
-      <a href="presentation.html" class="hero-cta page-link">
-        <span>Découvrir</span>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+
+      <p style="margin-top: 24px;">
+        <a href="presentation.html" style="color: white; text-decoration: none; font-weight: bold; border: 1px solid rgba(255,255,255,0.5); padding: 12px 18px; border-radius: 999px; display: inline-block;">
+          Découvrir la présentation
+        </a>
+      </p>
     </div>
-
-
   </header>
 
-  <!-- QUOTE SECTION -->
-  <section class="quote-section">
-    <div class="quote-inner container">
-      <span class="quote-mark">"</span>
-      <blockquote>Men put me down as the best woman painter… I think I'm one of the best painters.</blockquote>
-      <cite>— Georgia O'Keeffe</cite>
-    </div>
-  </section>
-
-  <!-- SECTION LABEL -->
-  <section class="section-intro container">
-    <div class="section-label">
-      <span class="label-number">01</span>
-      <span class="label-text">Œuvre mise à l'honneur</span>
-    </div>
-    <h2 class="section-heading">Première œuvre</h2>
-  </section>
-
-  <!-- ART CARD -->
   <main class="container">
-    <article class="art-card reveal" id="artwork-1">
+    <section class="section-title">
+      <h2>Publication à l'honneur</h2>
+    </section>
 
-      <!-- IMAGE + FOCUS -->
-      <div class="art-image-wrap" id="imageWrap">
-        <div class="art-image-inner">
-          <img src="lady.png" alt="The Lady in White" id="mainArtImg">
-        </div>
-        <button class="focus-btn" id="focusBtn" title="Agrandir">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <path d="M2 2h5M2 2v5M16 2h-5M16 2v5M2 16h5M2 16v-5M16 16h-5M16 16v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </button>
-        <div class="art-image-caption">
-          <span>Huile sur toile</span>
-          <span class="caption-dot">·</span>
-          <span>1880</span>
-        </div>
-
+    <article class="art-card">
+      <div class="art-image">
+        <img src="lady.png?v=2" alt="The Lady in White">
       </div>
 
-      <!-- CONTENT -->
-      <div class="art-content">
-        <div class="art-meta">
-          <span class="art-tag-plain">Peinture</span>
-          <span class="art-date">1880</span>
-        </div>
+      <div class="art-text">
+        <span class="tag">Peinture</span>
+        <h3>The Lady in White</h3>
+        <p class="artist-line">Prénom Nom (1840 – 1916) · Huile sur toile · Musée des Beaux-Arts, Paris</p>
 
-        <h3 class="art-title">La Dame<br><em>en blanc</em></h3>
-        <p class="art-artist">Marie Bracquemond · 1880</p>
-
-        <div class="art-divider"></div>
-
-        <!-- TABS -->
-        <div class="tabs">
-          <button class="tab active" data-tab="comment">Commentaire</button>
-          <button class="tab" data-tab="context">Contexte historique</button>
-        </div>
-
-        <div class="tab-content active" id="tab-comment">
-          <p>Cette œuvre dégage une impression de calme immédiat. La robe blanche capte la lumière avec une grande douceur, tandis que l'arrière-plan plus sombre crée un contraste subtil et élégant.</p>
-          <p>Ce qui attire ici, c'est la délicatesse générale de la composition. La posture, la matière du tissu et la lumière donnent à l'ensemble une présence silencieuse, presque suspendue.</p>
-          <p>J'aime particulièrement cette œuvre pour son raffinement. Elle ne cherche pas à impressionner par l'excès, mais par la nuance, la texture et une forme de beauté très paisible.</p>
-        </div>
-
-        <div class="tab-content" id="tab-context">
-          <p>Au XIXe siècle, le portrait féminin occupe une place centrale dans l'art académique. La représentation de la femme en blanc évoque la pureté, la grâce et l'idéal bourgeois de l'époque.</p>
-          <p>Cette période voit l'essor des grands salons parisiens, où les artistes soumettent leurs œuvres à des jurys officiels. Le portrait de femme en tenue élaborée est un genre prisé, permettant de démontrer virtuosité technique et sensibilité chromatique.</p>
-          <p>Les artistes femmes commencent à s'imposer progressivement dans ces cercles, souvent malgré les obstacles institutionnels, laissant des œuvres d'une force remarquable.</p>
-        </div>
-
-        <div class="art-footer">
-          <div class="art-number">N° 001</div>
-          <a href="#artwork-2" class="next-artwork">
-            Œuvre suivante
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <!-- ARTWORK 2 (placeholder) -->
-    <div class="section-intro" style="padding-top:0; margin-bottom: 30px;">
-      <div class="section-label">
-        <span class="label-number">02</span>
-        <span class="label-text">À venir</span>
-      </div>
-      <h2 class="section-heading">Prochaine œuvre</h2>
-    </div>
-
-    <article class="art-card art-card--placeholder reveal" id="artwork-2">
-      <div class="art-image-wrap placeholder-image">
-        <div class="placeholder-text">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          <span>Bientôt</span>
-        </div>
-      </div>
-      <div class="art-content art-content--placeholder">
-        <span class="art-tag-plain">À venir</span>
-        <h3 class="art-title" style="opacity:0.3">Prochaine<br><em>œuvre</em></h3>
-        <div class="art-divider"></div>
-        <p style="color: var(--taupe); font-size:15px; font-weight:300;">
-          Cette section accueillera bientôt une nouvelle œuvre choisie avec soin.<br>Revenez découvrir la sélection.
+        <p>
+          Cette oeuvre dégage une impression de calme immédiat. La robe blanche capte la lumière avec une grande douceur,
+          tandis que l'arrière-plan plus sombre crée un contraste subtil et élégant.
         </p>
-        <div class="art-footer">
-          <div class="art-number">N° 002</div>
-          <a href="#artwork-1" class="next-artwork">
-            Retour au début
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="transform:rotate(180deg)"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
+
+        <p>
+          Ce qui attire ici, c'est la délicatesse générale de la composition. La posture, la matière du tissu et la lumière
+          donnent à l'ensemble une présence silencieuse, presque suspendue.
+        </p>
+
+        <p>
+          J'aime particulièrement cette oeuvre pour son raffinement. Elle ne cherche pas à impressionner par l'excès,
+          mais par la nuance, la texture et une forme de beauté très paisible.
+        </p>
       </div>
     </article>
   </main>
-
-  <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightboxClose">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    </button>
-    <div class="lightbox-img-wrap">
-      <img src="lady.png" alt="La Dame en blanc — Marie Bracquemond" id="lightboxImg">
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner container">
-      <p class="footer-brand">M·Art</p>
-      <p class="footer-copy">Un regard personnel sur l'art qui marque.</p>
-      <a href="presentation.html" class="footer-link page-link">À propos →</a>
-    </div>
-  </footer>
-
-  <script>
-    // === PROGRESS BAR ===
-    const progressBar = document.getElementById('progressBar');
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.body.scrollHeight - window.innerHeight;
-      progressBar.style.width = (scrollTop / docHeight * 100) + '%';
-    });
-
-    // === PARALLAX HERO ===
-    const heroBg = document.getElementById('heroParallax');
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY;
-      if (heroBg) heroBg.style.transform = `translateY(${y * 0.3}px)`;
-    });
-
-    // === REVEAL ON SCROLL ===
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add('visible');
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // === TABS ===
-    document.querySelectorAll('.tab').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const tabId = btn.dataset.tab;
-        btn.closest('.art-content').querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        btn.closest('.art-content').querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-        btn.classList.add('active');
-        document.getElementById('tab-' + tabId).classList.add('active');
-      });
-    });
-
-    // === LIGHTBOX ===
-    const lightbox = document.getElementById('lightbox');
-    document.getElementById('focusBtn').addEventListener('click', () => {
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    });
-    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
-    function closeLightbox() {
-      lightbox.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    // === PAGE TRANSITIONS ===
-    const overlay = document.getElementById('pageTransition');
-    document.querySelectorAll('a.page-link').forEach(link => {
-      link.addEventListener('click', (e) => {
-        const href = link.getAttribute('href');
-        if (!href || href.startsWith('#')) return;
-        e.preventDefault();
-        overlay.classList.add('active');
-        setTimeout(() => { window.location.href = href; }, 380);
-      });
-    });
-    window.addEventListener('pageshow', () => {
-      overlay.classList.remove('active');
-    });
-
-    // === NAV SCROLL ===
-    const nav = document.getElementById('mainNav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 60);
-    });
-  </script>
 </body>
 </html>
