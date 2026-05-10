@@ -38,7 +38,6 @@
     <div class="hero-bg"></div>
     <div class="hero-noise"></div>
     <div class="hero-parallax-img" id="heroParallax"></div>
-
     <div class="hero-content">
       <div class="hero-eyebrow">
         <span class="eyebrow-line"></span>
@@ -75,7 +74,7 @@
   <main class="container">
     <article class="art-card reveal" id="artwork-1">
 
-      <!-- IMAGE + FOCUS -->
+      <!-- IMAGE -->
       <div class="art-image-wrap" id="imageWrap">
         <div class="art-image-inner">
           <img src="lady.png" alt="The Lady in White" id="mainArtImg">
@@ -90,22 +89,16 @@
           <span class="caption-dot">·</span>
           <span data-i18n="art1.location">Lieu de conservation, Ville</span>
         </div>
-        <div class="color-palette">
-          <div class="palette-dot" style="background:#d8cfc3;" title="#d8cfc3"></div>
-          <div class="palette-dot" style="background:#8a7060;" title="#8a7060"></div>
-          <div class="palette-dot" style="background:#3d2e22;" title="#3d2e22"></div>
-          <div class="palette-dot" style="background:#ede6da;" title="#ede6da"></div>
-        </div>
       </div>
 
       <!-- CONTENT -->
       <div class="art-content">
         <div class="art-meta">
-          <span class="art-tag" data-i18n="art1.tag">Peinture</span>
+          <span class="art-tag-plain" data-i18n="art1.tag">Peinture</span>
           <span class="art-date">1880</span>
         </div>
 
-        <h3 class="art-title">The Lady<br><em>in White</em></h3>
+        <h3 class="art-title" data-i18n="art1.title">La Dame<br><em>en blanc</em></h3>
         <p class="art-artist">Marie Bracquemond (1840 – 1916)</p>
 
         <div class="art-divider"></div>
@@ -154,7 +147,9 @@
         </div>
       </div>
       <div class="art-content art-content--placeholder">
-        <span class="art-tag" data-i18n="art2.tag">À venir</span>
+        <div class="art-meta">
+          <span class="art-tag-plain" data-i18n="art2.tag">À venir</span>
+        </div>
         <h3 class="art-title" style="opacity:0.3" data-i18n="art2.title">Prochaine<br><em>œuvre</em></h3>
         <div class="art-divider"></div>
         <p style="color: var(--taupe); font-size:15px; font-weight:300;" data-i18n="art2.text">
@@ -177,7 +172,7 @@
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
     </button>
     <div class="lightbox-img-wrap">
-      <img src="lady.png" alt="The Lady in White — Marie Bracquemond" id="lightboxImg">
+      <img src="lady.png" alt="La Dame en blanc — Marie Bracquemond" id="lightboxImg">
     </div>
   </div>
 
@@ -204,6 +199,7 @@
         'section01.label':  'Publication à l\'honneur',
         'art1.tag':         'Peinture',
         'art1.location':    'Lieu de conservation, Ville',
+        'art1.title':       'La Dame<br><em>en blanc</em>',
         'art1.tab.comment': 'Commentaire',
         'art1.tab.context': 'Contexte historique',
         'art1.p1':          'Cette œuvre dégage une impression de calme immédiat. La robe blanche capte la lumière avec une grande douceur, tandis que l\'arrière-plan plus sombre crée un contraste subtil et élégant.',
@@ -231,6 +227,7 @@
         'section01.label':  'Featured publication',
         'art1.tag':         'Painting',
         'art1.location':    'Museum / Collection, City',
+        'art1.title':       'The Lady<br><em>in White</em>',
         'art1.tab.comment': 'Commentary',
         'art1.tab.context': 'Historical context',
         'art1.p1':          'This work conveys an immediate sense of calm. The white dress catches the light with great softness, while the darker background creates a subtle and elegant contrast.',
@@ -257,28 +254,18 @@
     function setLang(lang) {
       document.documentElement.lang = lang;
       localStorage.setItem('mart-lang', lang);
-
-      document.title = lang === 'fr'
-        ? 'M·Art — Regards sensibles'
-        : 'M·Art — Sensitive perspectives';
-
+      document.title = lang === 'fr' ? 'M·Art — Regards sensibles' : 'M·Art — Sensitive perspectives';
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n;
-        if (i18n[lang][key] !== undefined) {
-          el.innerHTML = i18n[lang][key];
-        }
+        if (i18n[lang][key] !== undefined) el.innerHTML = i18n[lang][key];
       });
-
       document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === lang);
       });
     }
-
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', () => setLang(btn.dataset.lang));
     });
-
-    // Init with saved preference or default FR
     const savedLang = localStorage.getItem('mart-lang') || 'fr';
     setLang(savedLang);
 
@@ -305,9 +292,7 @@
     // REVEAL ON SCROLL
     // =============================================
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add('visible');
-      });
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
@@ -353,9 +338,7 @@
         setTimeout(() => { window.location.href = href; }, 380);
       });
     });
-    window.addEventListener('pageshow', () => {
-      overlay.classList.remove('active');
-    });
+    window.addEventListener('pageshow', () => { overlay.classList.remove('active'); });
 
     // =============================================
     // NAV SCROLL
