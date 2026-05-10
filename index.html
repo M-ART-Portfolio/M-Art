@@ -20,9 +20,16 @@
   <!-- NAVIGATION -->
   <nav class="nav" id="mainNav">
     <a href="index.html" class="nav-brand">M·Art</a>
-    <div class="nav-links">
-      <a href="index.html" class="nav-link active">Œuvres</a>
-      <a href="presentation.html" class="nav-link">À propos</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active" data-i18n="nav.works">Œuvres</a>
+        <a href="presentation.html" class="nav-link page-link" data-i18n="nav.about">À propos</a>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
     </div>
   </nav>
 
@@ -35,14 +42,13 @@
     <div class="hero-content">
       <div class="hero-eyebrow">
         <span class="eyebrow-line"></span>
-        <span class="eyebrow-text">Portfolio artistique</span>
+        <span class="eyebrow-text" data-i18n="hero.eyebrow">Portfolio artistique</span>
       </div>
-      <h1 class="hero-title">
-        <em>Une sélection</em><br>
-        sensible d'œuvres
+      <h1 class="hero-title" data-i18n="hero.title">
+        <em>Une sélection</em><br>sensible d'œuvres
       </h1>
       <a href="presentation.html" class="hero-cta page-link">
-        <span>Découvrir</span>
+        <span data-i18n="hero.cta">Découvrir</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -61,7 +67,7 @@
   <section class="section-intro container">
     <div class="section-label">
       <span class="label-number">01</span>
-      <span class="label-text">Publication à l'honneur</span>
+      <span class="label-text" data-i18n="section01.label">Publication à l'honneur</span>
     </div>
   </section>
 
@@ -82,10 +88,8 @@
         <div class="art-image-caption">
           <span>1880</span>
           <span class="caption-dot">·</span>
-          <span>Lieu de conservation, Ville</span>
+          <span data-i18n="art1.location">Lieu de conservation, Ville</span>
         </div>
-
-        <!-- COLOR PALETTE -->
         <div class="color-palette">
           <div class="palette-dot" style="background:#d8cfc3;" title="#d8cfc3"></div>
           <div class="palette-dot" style="background:#8a7060;" title="#8a7060"></div>
@@ -97,7 +101,7 @@
       <!-- CONTENT -->
       <div class="art-content">
         <div class="art-meta">
-          <span class="art-tag">Peinture</span>
+          <span class="art-tag" data-i18n="art1.tag">Peinture</span>
           <span class="art-date">1880</span>
         </div>
 
@@ -108,26 +112,26 @@
 
         <!-- TABS -->
         <div class="tabs">
-          <button class="tab active" data-tab="comment">Commentaire</button>
-          <button class="tab" data-tab="context">Contexte historique</button>
+          <button class="tab active" data-tab="comment" data-i18n="art1.tab.comment">Commentaire</button>
+          <button class="tab" data-tab="context" data-i18n="art1.tab.context">Contexte historique</button>
         </div>
 
         <div class="tab-content active" id="tab-comment">
-          <p>Cette œuvre dégage une impression de calme immédiat. La robe blanche capte la lumière avec une grande douceur, tandis que l'arrière-plan plus sombre crée un contraste subtil et élégant.</p>
-          <p>Ce qui attire ici, c'est la délicatesse générale de la composition. La posture, la matière du tissu et la lumière donnent à l'ensemble une présence silencieuse, presque suspendue.</p>
-          <p>J'aime particulièrement cette œuvre pour son raffinement. Elle ne cherche pas à impressionner par l'excès, mais par la nuance, la texture et une forme de beauté très paisible.</p>
+          <p data-i18n="art1.p1">Cette œuvre dégage une impression de calme immédiat. La robe blanche capte la lumière avec une grande douceur, tandis que l'arrière-plan plus sombre crée un contraste subtil et élégant.</p>
+          <p data-i18n="art1.p2">Ce qui attire ici, c'est la délicatesse générale de la composition. La posture, la matière du tissu et la lumière donnent à l'ensemble une présence silencieuse, presque suspendue.</p>
+          <p data-i18n="art1.p3">J'aime particulièrement cette œuvre pour son raffinement. Elle ne cherche pas à impressionner par l'excès, mais par la nuance, la texture et une forme de beauté très paisible.</p>
         </div>
 
         <div class="tab-content" id="tab-context">
-          <p>Au XIXe siècle, le portrait féminin occupe une place centrale dans l'art académique. La représentation de la femme en blanc évoque la pureté, la grâce et l'idéal bourgeois de l'époque.</p>
-          <p>Cette période voit l'essor des grands salons parisiens, où les artistes soumettent leurs œuvres à des jurys officiels. Le portrait de femme en tenue élaborée est un genre prisé, permettant de démontrer virtuosité technique et sensibilité chromatique.</p>
-          <p>Les artistes femmes commencent à s'imposer progressivement dans ces cercles, souvent malgré les obstacles institutionnels, laissant des œuvres d'une force remarquable.</p>
+          <p data-i18n="art1.ctx1">Au XIXe siècle, le portrait féminin occupe une place centrale dans l'art académique. La représentation de la femme en blanc évoque la pureté, la grâce et l'idéal bourgeois de l'époque.</p>
+          <p data-i18n="art1.ctx2">Cette période voit l'essor des grands salons parisiens, où les artistes soumettent leurs œuvres à des jurys officiels. Le portrait de femme en tenue élaborée est un genre prisé, permettant de démontrer virtuosité technique et sensibilité chromatique.</p>
+          <p data-i18n="art1.ctx3">Les artistes femmes commencent à s'imposer progressivement dans ces cercles, souvent malgré les obstacles institutionnels, laissant des œuvres d'une force remarquable.</p>
         </div>
 
         <div class="art-footer">
           <div class="art-number">N° 001</div>
           <a href="#artwork-2" class="next-artwork">
-            Œuvre suivante
+            <span data-i18n="art1.next">Œuvre suivante</span>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -138,7 +142,7 @@
     <div class="section-intro" style="padding-top:0; margin-bottom: 30px;">
       <div class="section-label">
         <span class="label-number">02</span>
-        <span class="label-text">À venir</span>
+        <span class="label-text" data-i18n="section02.label">À venir</span>
       </div>
     </div>
 
@@ -146,20 +150,20 @@
       <div class="art-image-wrap placeholder-image">
         <div class="placeholder-text">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          <span>Bientôt</span>
+          <span data-i18n="art2.soon">Bientôt</span>
         </div>
       </div>
       <div class="art-content art-content--placeholder">
-        <span class="art-tag">À venir</span>
-        <h3 class="art-title" style="opacity:0.3">Prochaine<br><em>œuvre</em></h3>
+        <span class="art-tag" data-i18n="art2.tag">À venir</span>
+        <h3 class="art-title" style="opacity:0.3" data-i18n="art2.title">Prochaine<br><em>œuvre</em></h3>
         <div class="art-divider"></div>
-        <p style="color: var(--taupe); font-size:15px; font-weight:300;">
+        <p style="color: var(--taupe); font-size:15px; font-weight:300;" data-i18n="art2.text">
           Cette section accueillera bientôt une nouvelle œuvre choisie avec soin.<br>Revenez découvrir la sélection.
         </p>
         <div class="art-footer">
           <div class="art-number">N° 002</div>
           <a href="#artwork-1" class="next-artwork">
-            Retour au début
+            <span data-i18n="art2.back">Retour au début</span>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="transform:rotate(180deg)"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -181,13 +185,106 @@
   <footer class="site-footer">
     <div class="footer-inner container">
       <p class="footer-brand">M·Art</p>
-      <p class="footer-copy">Un regard personnel sur l'art qui marque.</p>
-      <a href="presentation.html" class="footer-link page-link">À propos →</a>
+      <p class="footer-copy" data-i18n="footer.copy">Un regard personnel sur l'art qui marque.</p>
+      <a href="presentation.html" class="footer-link page-link" data-i18n="footer.link">À propos →</a>
     </div>
   </footer>
 
   <script>
-    // === PROGRESS BAR ===
+    // =============================================
+    // TRANSLATIONS
+    // =============================================
+    const i18n = {
+      fr: {
+        'nav.works':        'Œuvres',
+        'nav.about':        'À propos',
+        'hero.eyebrow':     'Portfolio artistique',
+        'hero.title':       '<em>Une sélection</em><br>sensible d\'œuvres',
+        'hero.cta':         'Découvrir',
+        'section01.label':  'Publication à l\'honneur',
+        'art1.tag':         'Peinture',
+        'art1.location':    'Lieu de conservation, Ville',
+        'art1.tab.comment': 'Commentaire',
+        'art1.tab.context': 'Contexte historique',
+        'art1.p1':          'Cette œuvre dégage une impression de calme immédiat. La robe blanche capte la lumière avec une grande douceur, tandis que l\'arrière-plan plus sombre crée un contraste subtil et élégant.',
+        'art1.p2':          'Ce qui attire ici, c\'est la délicatesse générale de la composition. La posture, la matière du tissu et la lumière donnent à l\'ensemble une présence silencieuse, presque suspendue.',
+        'art1.p3':          'J\'aime particulièrement cette œuvre pour son raffinement. Elle ne cherche pas à impressionner par l\'excès, mais par la nuance, la texture et une forme de beauté très paisible.',
+        'art1.ctx1':        'Au XIXe siècle, le portrait féminin occupe une place centrale dans l\'art académique. La représentation de la femme en blanc évoque la pureté, la grâce et l\'idéal bourgeois de l\'époque.',
+        'art1.ctx2':        'Cette période voit l\'essor des grands salons parisiens, où les artistes soumettent leurs œuvres à des jurys officiels. Le portrait de femme en tenue élaborée est un genre prisé, permettant de démontrer virtuosité technique et sensibilité chromatique.',
+        'art1.ctx3':        'Les artistes femmes commencent à s\'imposer progressivement dans ces cercles, souvent malgré les obstacles institutionnels, laissant des œuvres d\'une force remarquable.',
+        'art1.next':        'Œuvre suivante',
+        'section02.label':  'À venir',
+        'art2.soon':        'Bientôt',
+        'art2.tag':         'À venir',
+        'art2.title':       'Prochaine<br><em>œuvre</em>',
+        'art2.text':        'Cette section accueillera bientôt une nouvelle œuvre choisie avec soin.<br>Revenez découvrir la sélection.',
+        'art2.back':        'Retour au début',
+        'footer.copy':      'Un regard personnel sur l\'art qui marque.',
+        'footer.link':      'À propos →',
+      },
+      en: {
+        'nav.works':        'Works',
+        'nav.about':        'About',
+        'hero.eyebrow':     'Artistic portfolio',
+        'hero.title':       '<em>A sensitive</em><br>selection of works',
+        'hero.cta':         'Discover',
+        'section01.label':  'Featured publication',
+        'art1.tag':         'Painting',
+        'art1.location':    'Museum / Collection, City',
+        'art1.tab.comment': 'Commentary',
+        'art1.tab.context': 'Historical context',
+        'art1.p1':          'This work conveys an immediate sense of calm. The white dress catches the light with great softness, while the darker background creates a subtle and elegant contrast.',
+        'art1.p2':          'What draws the eye here is the overall delicacy of the composition. The posture, the texture of the fabric and the light give the whole a silent, almost suspended presence.',
+        'art1.p3':          'I particularly love this work for its refinement. It does not seek to impress through excess, but through nuance, texture and a very peaceful form of beauty.',
+        'art1.ctx1':        'In the 19th century, the female portrait held a central place in academic art. The depiction of women in white evoked purity, grace and the bourgeois ideal of the era.',
+        'art1.ctx2':        'This period saw the rise of the great Parisian salons, where artists submitted their works to official juries. The portrait of women in elaborate dress was a prized genre, allowing artists to demonstrate both technical virtuosity and chromatic sensitivity.',
+        'art1.ctx3':        'Women artists began to gradually establish themselves in these circles, often despite institutional barriers, leaving behind works of remarkable power.',
+        'art1.next':        'Next work',
+        'section02.label':  'Coming soon',
+        'art2.soon':        'Soon',
+        'art2.tag':         'Coming soon',
+        'art2.title':       'Next<br><em>work</em>',
+        'art2.text':        'This section will soon welcome a new carefully chosen work.<br>Come back to discover the selection.',
+        'art2.back':        'Back to top',
+        'footer.copy':      'A personal perspective on art that leaves a mark.',
+        'footer.link':      'About →',
+      }
+    };
+
+    // =============================================
+    // LANGUAGE SWITCHER
+    // =============================================
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      localStorage.setItem('mart-lang', lang);
+
+      document.title = lang === 'fr'
+        ? 'M·Art — Regards sensibles'
+        : 'M·Art — Sensitive perspectives';
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (i18n[lang][key] !== undefined) {
+          el.innerHTML = i18n[lang][key];
+        }
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
+    });
+
+    // Init with saved preference or default FR
+    const savedLang = localStorage.getItem('mart-lang') || 'fr';
+    setLang(savedLang);
+
+    // =============================================
+    // PROGRESS BAR
+    // =============================================
     const progressBar = document.getElementById('progressBar');
     window.addEventListener('scroll', () => {
       const scrollTop = window.scrollY;
@@ -195,14 +292,18 @@
       progressBar.style.width = (scrollTop / docHeight * 100) + '%';
     });
 
-    // === PARALLAX HERO ===
+    // =============================================
+    // PARALLAX HERO
+    // =============================================
     const heroBg = document.getElementById('heroParallax');
     window.addEventListener('scroll', () => {
       const y = window.scrollY;
       if (heroBg) heroBg.style.transform = `translateY(${y * 0.3}px)`;
     });
 
-    // === REVEAL ON SCROLL ===
+    // =============================================
+    // REVEAL ON SCROLL
+    // =============================================
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) e.target.classList.add('visible');
@@ -210,7 +311,9 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // === TABS ===
+    // =============================================
+    // TABS
+    // =============================================
     document.querySelectorAll('.tab').forEach(btn => {
       btn.addEventListener('click', () => {
         const tabId = btn.dataset.tab;
@@ -221,7 +324,9 @@
       });
     });
 
-    // === LIGHTBOX ===
+    // =============================================
+    // LIGHTBOX
+    // =============================================
     const lightbox = document.getElementById('lightbox');
     document.getElementById('focusBtn').addEventListener('click', () => {
       lightbox.classList.add('open');
@@ -235,7 +340,9 @@
       document.body.style.overflow = '';
     }
 
-    // === PAGE TRANSITIONS ===
+    // =============================================
+    // PAGE TRANSITIONS
+    // =============================================
     const overlay = document.getElementById('pageTransition');
     document.querySelectorAll('a.page-link').forEach(link => {
       link.addEventListener('click', (e) => {
@@ -250,7 +357,9 @@
       overlay.classList.remove('active');
     });
 
-    // === NAV SCROLL ===
+    // =============================================
+    // NAV SCROLL
+    // =============================================
     const nav = document.getElementById('mainNav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
