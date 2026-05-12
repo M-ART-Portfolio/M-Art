@@ -257,16 +257,17 @@ a, button {
 /* === PAGE HERO === */
 .page-hero {
   min-height: 52vh !important;
-  align-items: flex-end !important;
-  justify-content: flex-start !important;
-  padding-bottom: 70px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-bottom: 0 !important;
 }
 .page-hero-content {
   position: relative;
   z-index: 2;
+  text-align: center;
   animation: fadeUp 1s cubic-bezier(0.22,1,0.36,1) both;
 }
-.page-hero .hero-eyebrow { justify-content: flex-start; }
+.page-hero .hero-eyebrow { justify-content: center; }
 .page-hero-title {
   font-family: var(--font-display);
   font-size: clamp(52px, 7vw, 90px);
