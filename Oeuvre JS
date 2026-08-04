@@ -1,0 +1,254 @@
+/* =====================================================
+   M·Art — DONNÉES DES ŒUVRES
+   =====================================================
+   C'est LE SEUL fichier à modifier pour publier une œuvre.
+
+   POUR AJOUTER UNE ŒUVRE :
+   1. Ajoute l'image dans le dépôt GitHub (ex: "vague.jpg")
+   2. Copie le bloc MODÈLE tout en bas, colle-le APRÈS la
+      dernière œuvre (dans la liste OEUVRES), et remplis-le
+   3. Commit → la grille et la page de l'œuvre se créent
+      toutes seules. Rien d'autre à toucher.
+
+   Règles :
+   - "id" : unique, en minuscules, sans espaces ni accents
+     (il sert à l'adresse de la page : oeuvre.html?id=...)
+   - "titre" : la partie entre <em> ... </em> s'affiche en
+     italique doré. Le <br> force un retour à la ligne.
+   - "regard" et "histoire" : chaque paragraphe entre
+     guillemets, séparés par des virgules.
+   ===================================================== */
+
+const OEUVRES = [
+
+  {
+    id: "la-dame-en-blanc",
+    image: "lady.png",
+    annee: "1880",
+    artiste: "Marie Bracquemond",
+    dates: "1840 – 1916",
+
+    fr: {
+      tag: "Peinture",
+      titre: "La Dame <em>en blanc</em>",
+      titreCourt: "La Dame en blanc",
+      technique: "Huile sur toile",
+      dimensions: "180,5 × 105 cm",
+      lieu: "Musée d'Orsay, Paris",
+      regard: [
+        "Cette œuvre dégage une impression de calme immédiat. La robe blanche capte la lumière avec une grande douceur, tandis que l'arrière-plan plus sombre crée un contraste subtil et élégant.",
+        "Ce qui attire ici, c'est la délicatesse générale de la composition. La posture, la matière du tissu et la lumière donnent à l'ensemble une présence silencieuse, presque suspendue.",
+        "J'aime particulièrement cette œuvre pour son raffinement. Elle ne cherche pas à impressionner par l'excès, mais par la nuance, la texture et une forme de beauté très paisible."
+      ],
+      histoire: [
+        "Marie Bracquemond compte parmi les grandes figures féminines de l'impressionnisme, aux côtés de Berthe Morisot et Mary Cassatt. Issue d'un milieu modeste et largement autodidacte, elle développe une peinture lumineuse, travaillée en plein air — le plus souvent dans son jardin de Sèvres.",
+        "La Dame en blanc représente Louise Quivoron, demi-sœur de l'artiste et son modèle le plus fidèle. Le tableau est l'une des trois œuvres que Bracquemond présente à la cinquième exposition impressionniste, en avril 1880 — un cercle où très peu de femmes parvenaient alors à exposer.",
+        "Son mari, le graveur Félix Bracquemond, voyait cette carrière d'un mauvais œil et souhaitait la cantonner à des sujets jugés « féminins » ; découragée, elle cesse presque entièrement de peindre vers 1890. Longtemps déposée au musée de Cambrai, la toile a été acquise par le musée d'Orsay en 2019 — signe de la redécouverte tardive de cette artiste."
+      ]
+    },
+
+    en: {
+      tag: "Painting",
+      titre: "The Lady <em>in White</em>",
+      titreCourt: "The Lady in White",
+      technique: "Oil on canvas",
+      dimensions: "180.5 × 105 cm",
+      lieu: "Musée d'Orsay, Paris",
+      regard: [
+        "This work conveys an immediate sense of calm. The white dress catches the light with great softness, while the darker background creates a subtle and elegant contrast.",
+        "What draws the eye here is the overall delicacy of the composition. The posture, the texture of the fabric and the light give the whole a silent, almost suspended presence.",
+        "I particularly love this work for its refinement. It does not seek to impress through excess, but through nuance, texture and a very peaceful form of beauty."
+      ],
+      histoire: [
+        "Marie Bracquemond stands among the great women of Impressionism, alongside Berthe Morisot and Mary Cassatt. Born into a modest family and largely self-taught, she developed a luminous style of painting, working outdoors — most often in her garden at Sèvres.",
+        "The Lady in White depicts Louise Quivoron, the artist's half-sister and her most faithful model. It was one of three works Bracquemond showed at the fifth Impressionist exhibition in April 1880 — a circle very few women managed to enter at the time.",
+        "Her husband, the engraver Félix Bracquemond, disapproved of her career and wanted to confine her to so-called 'feminine' subjects; discouraged, she almost entirely stopped painting around 1890. Long on deposit at the museum of Cambrai, the canvas was acquired by the Musée d'Orsay in 2019 — a sign of this artist's late rediscovery."
+      ]
+    }
+  }
+
+  /* ===== MODÈLE — copie ce bloc pour ajouter une œuvre =====
+     (n'oublie pas la VIRGULE après l'accolade de l'œuvre
+      précédente, juste au-dessus)
+
+  ,{
+    id: "mon-oeuvre",
+    image: "mon-image.jpg",
+    annee: "1900",
+    artiste: "Prénom Nom",
+    dates: "1850 – 1920",
+
+    fr: {
+      tag: "Peinture",
+      titre: "Titre de <em>l'œuvre</em>",
+      titreCourt: "Titre de l'œuvre",
+      technique: "Huile sur toile",
+      dimensions: "100 × 80 cm",
+      lieu: "Musée, Ville",
+      regard: [
+        "Premier paragraphe : ce que je ressens devant cette œuvre.",
+        "Deuxième paragraphe : ce qui m'attire, un détail, une lumière.",
+        "Troisième paragraphe : pourquoi elle compte pour moi."
+      ],
+      histoire: [
+        "Premier paragraphe : l'artiste, son parcours.",
+        "Deuxième paragraphe : l'histoire de l'œuvre elle-même.",
+        "Troisième paragraphe : sa place dans l'histoire de l'art."
+      ]
+    },
+
+    en: {
+      tag: "Painting",
+      titre: "Title of <em>the work</em>",
+      titreCourt: "Title of the work",
+      technique: "Oil on canvas",
+      dimensions: "100 × 80 cm",
+      lieu: "Museum, City",
+      regard: [
+        "First paragraph.",
+        "Second paragraph.",
+        "Third paragraph."
+      ],
+      histoire: [
+        "First paragraph.",
+        "Second paragraph.",
+        "Third paragraph."
+      ]
+    }
+  }
+
+  ===== FIN DU MODÈLE ===== */
+
+];
+
+/* =====================================================
+   TEXTES DE L'INTERFACE (FR / EN)
+   — pas besoin d'y toucher pour publier une œuvre —
+   ===================================================== */
+
+const UI = {
+  fr: {
+    "nav.works":     "Œuvres",
+    "nav.about":     "À propos",
+
+    "hero.eyebrow":  "Portfolio artistique",
+    "hero.title":    "Des œuvres choisies,<br><em>racontées de près</em>",
+    "hero.sub":      "Ce qu'elles montrent, leur histoire, et pourquoi elles me touchent.",
+    "hero.cta":      "Voir la collection",
+
+    "quote.text":    "« Les hommes me classent comme la meilleure femme peintre. Je pense être l'un des meilleurs peintres. »",
+    "quote.author":  "— Georgia O'Keeffe",
+
+    "coll.label":    "La collection",
+    "coll.one":      "œuvre",
+    "coll.many":     "œuvres",
+    "coll.soon":     "d'autres à venir",
+    "card.discover": "Découvrir",
+    "soon.title":    "Prochaine œuvre",
+    "soon.text":     "Une nouvelle œuvre choisie avec soin arrivera bientôt.",
+    "soon.badge":    "Bientôt",
+
+    "o.back":        "La collection",
+    "o.tab.regard":  "Mon regard",
+    "o.tab.histoire":"Histoire & contexte",
+    "o.prev":        "Œuvre précédente",
+    "o.next":        "Œuvre suivante",
+    "o.zoom":        "Voir en grand",
+
+    "footer.copy":   "Un regard personnel sur l'art qui marque.",
+    "footer.works":  "Œuvres →",
+    "footer.about":  "À propos →"
+  },
+
+  en: {
+    "nav.works":     "Works",
+    "nav.about":     "About",
+
+    "hero.eyebrow":  "Artistic portfolio",
+    "hero.title":    "Chosen works,<br><em>seen up close</em>",
+    "hero.sub":      "What they show, their story, and why they move me.",
+    "hero.cta":      "View the collection",
+
+    "quote.text":    "\u201CMen put me down as the best woman painter. I think I'm one of the best painters.\u201D",
+    "quote.author":  "— Georgia O'Keeffe",
+
+    "coll.label":    "The collection",
+    "coll.one":      "work",
+    "coll.many":     "works",
+    "coll.soon":     "more to come",
+    "card.discover": "Discover",
+    "soon.title":    "Next work",
+    "soon.text":     "A new, carefully chosen work is coming soon.",
+    "soon.badge":    "Soon",
+
+    "o.back":        "The collection",
+    "o.tab.regard":  "My eye",
+    "o.tab.histoire":"History & context",
+    "o.prev":        "Previous work",
+    "o.next":        "Next work",
+    "o.zoom":        "View full screen",
+
+    "footer.copy":   "A personal perspective on art that leaves a mark.",
+    "footer.works":  "Works →",
+    "footer.about":  "About →"
+  }
+};
+
+/* ===== Petites fonctions partagées par toutes les pages ===== */
+
+function getLang() {
+  return localStorage.getItem("mart-lang") || "fr";
+}
+
+function applyUI(lang, extra) {
+  const dict = extra ? Object.assign({}, UI[lang], extra[lang]) : UI[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(function (el) {
+    const key = el.dataset.i18n;
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+  document.querySelectorAll(".lang-btn").forEach(function (btn) {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+}
+
+function initLangButtons(onChange) {
+  document.querySelectorAll(".lang-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      localStorage.setItem("mart-lang", btn.dataset.lang);
+      onChange(btn.dataset.lang);
+    });
+  });
+}
+
+function initChrome() {
+  /* Barre de progression */
+  const bar = document.getElementById("progressBar");
+  if (bar) {
+    window.addEventListener("scroll", function () {
+      const h = document.body.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
+    }, { passive: true });
+  }
+  /* Nav au scroll */
+  const nav = document.getElementById("mainNav");
+  if (nav) {
+    window.addEventListener("scroll", function () {
+      nav.classList.toggle("scrolled", window.scrollY > 60);
+    }, { passive: true });
+  }
+  /* Transitions de page (délégation : marche aussi sur les liens créés en JS) */
+  const overlay = document.getElementById("pageTransition");
+  document.addEventListener("click", function (e) {
+    const link = e.target.closest("a.page-link");
+    if (!link) return;
+    const href = link.getAttribute("href");
+    if (!href || href.charAt(0) === "#") return;
+    e.preventDefault();
+    if (overlay) overlay.classList.add("active");
+    setTimeout(function () { window.location.href = href; }, 360);
+  });
+  window.addEventListener("pageshow", function () {
+    if (overlay) overlay.classList.remove("active");
+  });
+}
