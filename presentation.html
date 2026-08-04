@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M·Art — À propos</title>
+  <meta name="description" content="M·Art — qui je suis, et pourquoi ce portfolio d'art personnel, tourné notamment vers les artistes femmes.">
+  <meta name="theme-color" content="#1a1814">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="M·Art — À propos">
+  <meta property="og:description" content="Un regard personnel sur l'art qui marque.">
+  <meta property="og:image" content="https://flambardgautier-wq.github.io/M-Art/lady.png">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1814'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23c4a06a' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -11,44 +21,40 @@
 </head>
 <body>
 
-  <!-- PROGRESS BAR -->
   <div class="progress-bar" id="progressBar"></div>
-
-  <!-- PAGE TRANSITION OVERLAY -->
   <div class="page-transition" id="pageTransition"></div>
 
   <!-- NAVIGATION -->
   <nav class="nav" id="mainNav">
-    <a href="index.html" class="nav-brand">M·Art</a>
+    <a href="index.html" class="nav-brand page-link">M·Art</a>
     <div class="nav-right">
       <div class="nav-links">
         <a href="index.html" class="nav-link page-link" data-i18n="nav.works">Œuvres</a>
         <a href="presentation.html" class="nav-link active" data-i18n="nav.about">À propos</a>
       </div>
       <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="fr">FR</button>
+        <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
         <span class="lang-sep">·</span>
-        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
       </div>
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <header class="page-hero hero" id="hero">
+  <!-- EN-TÊTE DE PAGE -->
+  <header class="page-hero">
     <div class="hero-bg"></div>
     <div class="hero-noise"></div>
-    <div class="container" style="width:100%;">
-      <div class="page-hero-content">
-        <div class="hero-eyebrow">
-          <span class="eyebrow-line"></span>
-          <span class="eyebrow-text" data-i18n="about.eyebrow">Portfolio artistique</span>
-        </div>
-        <h1 class="page-hero-title" data-i18n="about.title"><em>À propos</em></h1>
+    <div class="page-hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text" data-i18n="about.eyebrow">Portfolio artistique</span>
+        <span class="eyebrow-line"></span>
       </div>
+      <h1 class="page-hero-title" data-i18n="about.title"><em>À propos</em></h1>
     </div>
   </header>
 
-  <!-- ABOUT CARD — centré -->
+  <!-- CARTE À PROPOS -->
   <main class="container">
     <article class="about-card reveal">
       <div class="about-image-wrap">
@@ -58,19 +64,17 @@
         <div class="about-image-deco"></div>
       </div>
       <div class="about-content">
-        <div class="art-meta" style="margin-bottom: 0;">
-          <span class="art-tag-plain" data-i18n="about.tag">À propos</span>
-        </div>
+        <span class="art-tag-plain" data-i18n="about.tag">À propos</span>
         <h2 class="about-title" data-i18n="about.heading">Bienvenue<br><em>sur M·Art</em></h2>
         <div class="art-divider"></div>
         <div class="about-body">
-          <p data-i18n="about.p1">Je suis étudiante et passionnée d'art. À travers M-Art, j'ai voulu créer un espace personnel consacré aux œuvres qui me touchent, me questionnent et, selon moi, ont laissé une empreinte durable dans l'histoire de l'art.</p>
+          <p data-i18n="about.p1">Je suis étudiante et passionnée d'art. À travers M·Art, j'ai voulu créer un espace personnel consacré aux œuvres qui me touchent, me questionnent et, selon moi, ont laissé une empreinte durable dans l'histoire de l'art.</p>
           <p data-i18n="about.p2">Ce portfolio rassemble des œuvres que j'aime pour leur force visuelle, leur sens, mais aussi pour l'impact culturel qu'elles ont pu avoir à leur époque et au-delà. Mon regard s'oriente particulièrement vers <strong>les artistes femmes</strong>, qui ont su s'imposer dans un monde de l'art longtemps dominé par les hommes, souvent avec talent, audace et singularité.</p>
-          <p data-i18n="about.p3">Avec M-Art, je souhaite partager une sélection d'œuvres accompagnées de commentaires personnels, afin de proposer une approche sensible, accessible et engagée de l'art.</p>
+          <p data-i18n="about.p3">Chaque œuvre est présentée avec deux entrées : <strong>mon regard</strong> — ce que je ressens, ce qui m'attire — et <strong>son histoire</strong> — l'artiste, le contexte, ce que l'œuvre a traversé.</p>
         </div>
-        <a href="index.html" class="hero-cta page-link" style="margin-top: 32px; align-self: flex-start;">
+        <a href="index.html" class="hero-cta cta-light page-link">
           <span data-i18n="about.cta">Voir les œuvres</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
     </article>
@@ -81,106 +85,50 @@
     <div class="footer-inner container">
       <p class="footer-brand">M·Art</p>
       <p class="footer-copy" data-i18n="footer.copy">Un regard personnel sur l'art qui marque.</p>
-      <a href="index.html" class="footer-link page-link" data-i18n="footer.link.back">Œuvres →</a>
+      <a href="index.html" class="footer-link page-link" data-i18n="footer.works">Œuvres →</a>
     </div>
   </footer>
 
+  <script src="oeuvres.js"></script>
   <script>
-    // =============================================
-    // TRANSLATIONS
-    // =============================================
-    const i18n = {
+    // Textes propres à cette page (s'ajoutent aux textes communs de oeuvres.js)
+    const ABOUT = {
       fr: {
-        'nav.works':        'Œuvres',
-        'nav.about':        'À propos',
-        'about.eyebrow':    'Portfolio artistique',
-        'about.title':      '<em>À propos</em>',
-        'about.tag':        'À propos',
-        'about.heading':    'Bienvenue<br><em>sur M·Art</em>',
-        'about.p1':         'Je suis étudiante et passionnée d\'art. À travers M-Art, j\'ai voulu créer un espace personnel consacré aux œuvres qui me touchent, me questionnent et, selon moi, ont laissé une empreinte durable dans l\'histoire de l\'art.',
-        'about.p2':         'Ce portfolio rassemble des œuvres que j\'aime pour leur force visuelle, leur sens, mais aussi pour l\'impact culturel qu\'elles ont pu avoir à leur époque et au-delà. Mon regard s\'oriente particulièrement vers <strong>les artistes femmes</strong>, qui ont su s\'imposer dans un monde de l\'art longtemps dominé par les hommes, souvent avec talent, audace et singularité.',
-        'about.p3':         'Avec M-Art, je souhaite partager une sélection d\'œuvres accompagnées de commentaires personnels, afin de proposer une approche sensible, accessible et engagée de l\'art.',
-        'about.cta':        'Voir les œuvres',
-        'footer.copy':      'Un regard personnel sur l\'art qui marque.',
-        'footer.link.back': 'Œuvres →',
+        "about.eyebrow": "Portfolio artistique",
+        "about.title":   "<em>À propos</em>",
+        "about.tag":     "À propos",
+        "about.heading": "Bienvenue<br><em>sur M·Art</em>",
+        "about.p1":      "Je suis étudiante et passionnée d'art. À travers M·Art, j'ai voulu créer un espace personnel consacré aux œuvres qui me touchent, me questionnent et, selon moi, ont laissé une empreinte durable dans l'histoire de l'art.",
+        "about.p2":      "Ce portfolio rassemble des œuvres que j'aime pour leur force visuelle, leur sens, mais aussi pour l'impact culturel qu'elles ont pu avoir à leur époque et au-delà. Mon regard s'oriente particulièrement vers <strong>les artistes femmes</strong>, qui ont su s'imposer dans un monde de l'art longtemps dominé par les hommes, souvent avec talent, audace et singularité.",
+        "about.p3":      "Chaque œuvre est présentée avec deux entrées : <strong>mon regard</strong> — ce que je ressens, ce qui m'attire — et <strong>son histoire</strong> — l'artiste, le contexte, ce que l'œuvre a traversé.",
+        "about.cta":     "Voir les œuvres"
       },
       en: {
-        'nav.works':        'Works',
-        'nav.about':        'About',
-        'about.eyebrow':    'Artistic portfolio',
-        'about.title':      '<em>About</em>',
-        'about.tag':        'About',
-        'about.heading':    'Welcome<br><em>to M·Art</em>',
-        'about.p1':         'I am a student with a passion for art. Through M-Art, I wanted to create a personal space dedicated to works that move me, question me and, in my view, have left a lasting mark on the history of art.',
-        'about.p2':         'This portfolio brings together works I love for their visual power, their meaning, and the cultural impact they had in their time and beyond. My attention turns especially to <strong>women artists</strong>, who carved their place in an art world long dominated by men — often with talent, boldness and singularity.',
-        'about.p3':         'With M-Art, I want to share a selection of works alongside personal commentary, offering a sensitive, accessible and engaged approach to art.',
-        'about.cta':        'See the works',
-        'footer.copy':      'A personal perspective on art that leaves a mark.',
-        'footer.link.back': 'Works →',
+        "about.eyebrow": "Artistic portfolio",
+        "about.title":   "<em>About</em>",
+        "about.tag":     "About",
+        "about.heading": "Welcome<br><em>to M·Art</em>",
+        "about.p1":      "I am a student with a passion for art. Through M·Art, I wanted to create a personal space dedicated to works that move me, question me and, in my view, have left a lasting mark on the history of art.",
+        "about.p2":      "This portfolio brings together works I love for their visual power, their meaning, and the cultural impact they had in their time and beyond. My attention turns especially to <strong>women artists</strong>, who carved their place in an art world long dominated by men — often with talent, boldness and singularity.",
+        "about.p3":      "Each work comes with two entries: <strong>my eye</strong> — what I feel, what draws me in — and <strong>its history</strong> — the artist, the context, what the work has been through.",
+        "about.cta":     "See the works"
       }
     };
 
-    // =============================================
-    // LANGUAGE SWITCHER
-    // =============================================
     function setLang(lang) {
-      document.documentElement.lang = lang;
-      localStorage.setItem('mart-lang', lang);
-      document.title = lang === 'fr' ? 'M·Art — À propos' : 'M·Art — About';
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.dataset.i18n;
-        if (i18n[lang][key] !== undefined) el.innerHTML = i18n[lang][key];
-      });
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === lang);
-      });
+      applyUI(lang, ABOUT);
+      document.title = lang === "fr" ? "M·Art — À propos" : "M·Art — About";
     }
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.addEventListener('click', () => setLang(btn.dataset.lang));
-    });
-    const savedLang = localStorage.getItem('mart-lang') || 'fr';
-    setLang(savedLang);
 
-    // =============================================
-    // PROGRESS BAR
-    // =============================================
-    const progressBar = document.getElementById('progressBar');
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.body.scrollHeight - window.innerHeight;
-      progressBar.style.width = (scrollTop / docHeight * 100) + '%';
-    });
-
-    // =============================================
-    // REVEAL ON SCROLL
-    // =============================================
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    // Apparition au scroll
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add("visible"); });
     }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelectorAll(".reveal").forEach(function (el) { observer.observe(el); });
 
-    // =============================================
-    // PAGE TRANSITIONS
-    // =============================================
-    const overlay = document.getElementById('pageTransition');
-    document.querySelectorAll('a.page-link').forEach(link => {
-      link.addEventListener('click', (e) => {
-        const href = link.getAttribute('href');
-        if (!href || href.startsWith('#')) return;
-        e.preventDefault();
-        overlay.classList.add('active');
-        setTimeout(() => { window.location.href = href; }, 380);
-      });
-    });
-    window.addEventListener('pageshow', () => { overlay.classList.remove('active'); });
-
-    // =============================================
-    // NAV SCROLL
-    // =============================================
-    const nav = document.getElementById('mainNav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 60);
-    });
+    initChrome();
+    initLangButtons(setLang);
+    setLang(getLang());
   </script>
 </body>
 </html>
