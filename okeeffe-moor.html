@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O'Keeffe & Moore — Giants of Modern Art — M·Art</title>
+  <meta name="description" content="Georgia O'Keeffe et Henry Moore réunis pour la première fois : la nature comme matrice de l'abstraction.">
+  <meta name="theme-color" content="#1a1814">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="O'Keeffe & Moore — Giants of Modern Art — M·Art">
+  <meta property="og:description" content="Georgia O'Keeffe et Henry Moore réunis pour la première fois : la nature comme matrice de l'abstraction.">
+  <meta property="og:image" content="https://m-art-portfolio.github.io/M-Art/okeeffe-moore.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1814'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23c4a06a' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-brand page-link">M·Art</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active page-link" data-i18n="nav.works">Œuvres</a>
+        <a href="presentation.html" class="nav-link page-link" data-i18n="nav.about">À propos</a>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MUR DE MUSÉE -->
+  <section class="stage">
+    <div class="hero-bg"></div>
+    <div class="hero-noise"></div>
+
+    <a href="index.html" class="stage-back page-link">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-i18n="o.back">La collection</span>
+    </a>
+
+    <div class="stage-inner">
+      <figure class="stage-frame" id="stageFrame">
+        <button class="stage-zoom" id="focusBtn" title="Voir en grand" aria-label="Voir en grand">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M2 2h5M2 2v5M16 2h-5M16 2v5M2 16h5M2 16v-5M16 16h-5M16 16v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="stage-mat">
+          <img src="okeeffe-moore.jpg" alt="O'Keeffe & Moore — Giants of Modern Art" id="artImg" onerror="document.getElementById('stageFrame').classList.add('empty')">
+          <div class="stage-hint">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+            <code>okeeffe-moore.jpg</code>
+          </div>
+        </div>
+      </figure>
+
+      <!-- Cartel, comme au musée -->
+      <aside class="plaque" aria-label="Cartel">
+        <p class="plaque-artist" data-i18n="pl.artist">O'Keeffe (1887–1986) · Moore (1898–1986)</p>
+        <p class="plaque-title" data-i18n="pl.title"><em>Giants of Modern Art</em>, 2024</p>
+        <p class="plaque-loc" data-i18n="pl.lieu">Musée des beaux-arts de Montréal</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTENU -->
+  <main class="container">
+    <article class="oeuvre-body">
+      <div class="art-meta">
+        <span class="art-tag-plain" data-i18n="meta.tag">Exposition</span>
+        <span class="art-sep" aria-hidden="true">·</span>
+        <span class="art-number">N° 003</span>
+      </div>
+
+      <h1 class="oeuvre-title" data-i18n="page.h1">Giants of<br><em>Modern Art</em></h1>
+      <p class="oeuvre-artist" data-i18n="page.artist">Georgia O'Keeffe & Henry Moore — Musée des beaux-arts de Montréal, 2024</p>
+
+      <div class="art-divider"></div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="regard" data-i18n="tab.regard">Mon regard</button>
+        <button class="tab" data-tab="histoire" data-i18n="tab.histoire">Histoire &amp; contexte</button>
+        <button class="tab" data-tab="images" data-i18n="tab.images">En images</button>
+      </div>
+
+      <div class="tab-content active" id="tab-regard">
+        <p data-i18n="regard.p1">Deux artistes que tout semble séparer — la peinture du désert américain, la sculpture anglaise — et pourtant la même obsession : les formes de la nature.</p>
+        <p data-i18n="regard.p2">Les ateliers reconstitués m'ont marquée : os, galets, coquillages posés sur les rebords de fenêtre. On comprend d'un coup d'où viennent les œuvres.</p>
+        <p data-i18n="regard.p3">J'en suis sortie avec l'envie de regarder autrement les objets ramassés — comme des sculptures en attente.</p>
+      </div>
+
+      <div class="tab-content" id="tab-histoire">
+        <p data-i18n="histoire.p1">Georgia O'Keeffe (1887–1986) et Henry Moore (1898–1986) : la peintre américaine du désert du Nouveau-Mexique et le sculpteur anglais des formes monumentales. « Giants of Modern Art » est la première exposition à examiner leurs parcours en parallèle.</p>
+        <p data-i18n="histoire.p2">Organisée par le San Diego Museum of Art avec le Georgia O'Keeffe Museum de Santa Fe et la Henry Moore Foundation, l'exposition a voyagé de San Diego à Montréal (Musée des beaux-arts, 2024) puis Boston (Museum of Fine Arts, 2024-2025), réunissant plus d'une centaine de peintures et sculptures.</p>
+        <p data-i18n="histoire.p3">Son cœur : la nature comme matrice de l'abstraction. Crânes d'animaux, galets, coquillages, bois flotté — les ateliers des deux artistes, reconstitués avec leurs collections d'objets trouvés, montrent comment chacun a distillé ces formes naturelles en un langage moderne qui lui est propre.</p>
+      </div>
+
+      <div class="tab-content" id="tab-images">
+        <div class="gallery-grid">
+          <figure class="ph">
+            <img src="okm-1.jpg" alt="O'Keeffe & Moore — Giants of Modern Art — photo 1" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>okm-1.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="okm-2.jpg" alt="O'Keeffe & Moore — Giants of Modern Art — photo 2" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>okm-2.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="okm-3.jpg" alt="O'Keeffe & Moore — Giants of Modern Art — photo 3" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>okm-3.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="okm-4.jpg" alt="O'Keeffe & Moore — Giants of Modern Art — photo 4" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>okm-4.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="okm-5.jpg" alt="O'Keeffe & Moore — Giants of Modern Art — photo 5" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>okm-5.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="okm-6.jpg" alt="O'Keeffe & Moore — Giants of Modern Art — photo 6" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>okm-6.jpg</code>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- TEMPS FORTS -->
+    <section class="highlights reveal">
+      <p class="highlights-title"><span data-i18n="hl.title">Ce qui m'a marquée</span></p>
+      <div class="highlights-grid">
+        <div class="hl">
+          <span class="hl-num">I</span>
+          <h4 data-i18n="hl1.t">Les ateliers reconstitués</h4>
+          <p data-i18n="hl1.p">Os, galets et coquillages alignés sur les rebords de fenêtre : le vocabulaire des deux artistes exposé à ciel ouvert.</p>
+        </div>
+        <div class="hl">
+          <span class="hl-num">II</span>
+          <h4 data-i18n="hl2.t">Jack-in-the-Pulpit No. III (1930)</h4>
+          <p data-i18n="hl2.p">La fleur poussée jusqu'au bord de l'abstraction : O'Keeffe résumée en une seule image.</p>
+        </div>
+        <div class="hl">
+          <span class="hl-num">III</span>
+          <h4 data-i18n="hl3.t">Peinture face à sculpture</h4>
+          <p data-i18n="hl3.p">Accrochées côte à côte, les œuvres se répondent : mêmes courbes, mêmes creux, mêmes pleins.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entrée précédente / suivante -->
+    <nav class="oeuvre-nav reveal" aria-label="Autres entrées">
+      <a class="onav onav-prev page-link" href="taylor.html">
+        <span class="onav-label">← <span data-i18n="nav.prev">Entrée précédente</span></span>
+        <span class="onav-title" data-i18n="nav.prev.title">Henry Taylor — Where thoughts provoke</span>
+      </a>
+      <a class="onav onav-next page-link" href="dame-en-blanc.html">
+        <span class="onav-label"><span data-i18n="nav.next">Entrée suivante</span> →</span>
+        <span class="onav-title" data-i18n="nav.next.title">La Dame en blanc</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <p class="footer-brand">M·Art</p>
+      <p class="footer-copy" data-i18n="footer.copy">Un regard personnel sur l'art qui marque.</p>
+      <a href="index.html" class="footer-link page-link" data-i18n="footer.works">Œuvres →</a>
+    </div>
+  </footer>
+
+  <script>
+  /* ============ Page 100% autonome — aucun fichier JS externe ============ */
+  (function () {
+    var I18N = {"fr": {"page.title": "O'Keeffe & Moore — Giants of Modern Art — M·Art", "meta.tag": "Exposition", "page.h1": "Giants of<br><em>Modern Art</em>", "page.artist": "Georgia O'Keeffe & Henry Moore — Musée des beaux-arts de Montréal, 2024", "pl.artist": "O'Keeffe (1887–1986) · Moore (1898–1986)", "pl.title": "<em>Giants of Modern Art</em>, 2024", "pl.lieu": "Musée des beaux-arts de Montréal", "regard.p1": "Deux artistes que tout semble séparer — la peinture du désert américain, la sculpture anglaise — et pourtant la même obsession : les formes de la nature.", "regard.p2": "Les ateliers reconstitués m'ont marquée : os, galets, coquillages posés sur les rebords de fenêtre. On comprend d'un coup d'où viennent les œuvres.", "regard.p3": "J'en suis sortie avec l'envie de regarder autrement les objets ramassés — comme des sculptures en attente.", "histoire.p1": "Georgia O'Keeffe (1887–1986) et Henry Moore (1898–1986) : la peintre américaine du désert du Nouveau-Mexique et le sculpteur anglais des formes monumentales. « Giants of Modern Art » est la première exposition à examiner leurs parcours en parallèle.", "histoire.p2": "Organisée par le San Diego Museum of Art avec le Georgia O'Keeffe Museum de Santa Fe et la Henry Moore Foundation, l'exposition a voyagé de San Diego à Montréal (Musée des beaux-arts, 2024) puis Boston (Museum of Fine Arts, 2024-2025), réunissant plus d'une centaine de peintures et sculptures.", "histoire.p3": "Son cœur : la nature comme matrice de l'abstraction. Crânes d'animaux, galets, coquillages, bois flotté — les ateliers des deux artistes, reconstitués avec leurs collections d'objets trouvés, montrent comment chacun a distillé ces formes naturelles en un langage moderne qui lui est propre.", "hl1.t": "Les ateliers reconstitués", "hl1.p": "Os, galets et coquillages alignés sur les rebords de fenêtre : le vocabulaire des deux artistes exposé à ciel ouvert.", "hl2.t": "Jack-in-the-Pulpit No. III (1930)", "hl2.p": "La fleur poussée jusqu'au bord de l'abstraction : O'Keeffe résumée en une seule image.", "hl3.t": "Peinture face à sculpture", "hl3.p": "Accrochées côte à côte, les œuvres se répondent : mêmes courbes, mêmes creux, mêmes pleins.", "nav.works": "Œuvres", "nav.about": "À propos", "o.back": "La collection", "tab.regard": "Mon regard", "tab.histoire": "Histoire & contexte", "tab.images": "En images", "ph.add": "Image à ajouter au dépôt :", "hl.title": "Ce qui m'a marquée", "nav.prev": "Entrée précédente", "nav.next": "Entrée suivante", "footer.copy": "Un regard personnel sur l'art qui marque.", "footer.works": "Œuvres →", "nav.prev.title": "Henry Taylor — Where thoughts provoke", "nav.next.title": "La Dame en blanc"}, "en": {"page.title": "O'Keeffe & Moore — Giants of Modern Art — M·Art", "meta.tag": "Exhibition", "page.h1": "Giants of<br><em>Modern Art</em>", "page.artist": "Georgia O'Keeffe & Henry Moore — Montreal Museum of Fine Arts, 2024", "pl.artist": "O'Keeffe (1887–1986) · Moore (1898–1986)", "pl.title": "<em>Giants of Modern Art</em>, 2024", "pl.lieu": "Montreal Museum of Fine Arts", "regard.p1": "Two artists that everything seems to separate — American desert painting, English sculpture — and yet the same obsession: the forms of nature.", "regard.p2": "The reconstructed studios stayed with me: bones, pebbles, seashells lined up on the windowsills. Suddenly you understand where the works come from.", "regard.p3": "I left wanting to look differently at gathered objects — as sculptures in waiting.", "histoire.p1": "Georgia O'Keeffe (1887–1986) and Henry Moore (1898–1986): the American painter of the New Mexico desert and the English sculptor of monumental forms. 'Giants of Modern Art' is the first exhibition to examine their paths in parallel.", "histoire.p2": "Organised by the San Diego Museum of Art with the Georgia O'Keeffe Museum in Santa Fe and the Henry Moore Foundation, the exhibition travelled from San Diego to Montreal (Museum of Fine Arts, 2024) and then Boston (Museum of Fine Arts, 2024-2025), bringing together over a hundred paintings and sculptures.", "histoire.p3": "At its heart: nature as the matrix of abstraction. Animal skulls, pebbles, seashells, driftwood — both artists' studios, recreated with their collections of found objects, show how each distilled these natural forms into a modern language of their own.", "hl1.t": "The reconstructed studios", "hl1.p": "Bones, pebbles and seashells lined up on the windowsills: both artists' vocabulary laid out in the open.", "hl2.t": "Jack-in-the-Pulpit No. III (1930)", "hl2.p": "The flower pushed to the edge of abstraction: O'Keeffe summed up in a single image.", "hl3.t": "Painting facing sculpture", "hl3.p": "Hung side by side, the works answer one another: same curves, same hollows, same volumes.", "nav.works": "Works", "nav.about": "About", "o.back": "The collection", "tab.regard": "My eye", "tab.histoire": "History & context", "tab.images": "In pictures", "ph.add": "Image to add to the repo:", "hl.title": "What stayed with me", "nav.prev": "Previous entry", "nav.next": "Next entry", "footer.copy": "A personal perspective on art that leaves a mark.", "footer.works": "Works →", "nav.prev.title": "Henry Taylor — Where thoughts provoke", "nav.next.title": "The Lady in White"}};
+
+    function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    function storeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+    function setLang(lang) {
+      storeSet("mart-lang", lang);
+      document.documentElement.lang = lang;
+      var d = I18N[lang];
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        if (d[key] !== undefined) el.innerHTML = d[key];
+      });
+      document.querySelectorAll(".lang-btn").forEach(function (b) {
+        b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+      });
+      document.title = d["page.title"];
+    }
+    document.querySelectorAll(".lang-btn").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+    });
+    setLang(storeGet("mart-lang") || "fr");
+
+    /* Barre de progression + nav au scroll */
+    var bar = document.getElementById("progressBar");
+    var nav = document.getElementById("mainNav");
+    window.addEventListener("scroll", function () {
+      var h = document.body.scrollHeight - window.innerHeight;
+      if (bar) bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
+      if (nav) nav.classList.toggle("scrolled", window.scrollY > 60);
+    }, { passive: true });
+
+    /* Transitions de page */
+    var overlay = document.getElementById("pageTransition");
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest ? e.target.closest("a.page-link") : null;
+      if (!link) return;
+      var href = link.getAttribute("href");
+      if (!href || href.charAt(0) === "#") return;
+      e.preventDefault();
+      if (overlay) overlay.classList.add("active");
+      setTimeout(function () { window.location.href = href; }, 360);
+    });
+    window.addEventListener("pageshow", function () {
+      if (overlay) overlay.classList.remove("active");
+    });
+
+    /* Apparition au scroll */
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) en.target.classList.add("visible"); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll(".reveal").forEach(function (el) { obs.observe(el); });
+
+    /* Onglets */
+    document.querySelectorAll(".tab").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".tab").forEach(function (b) { b.classList.remove("active"); });
+        document.querySelectorAll(".tab-content").forEach(function (c) { c.classList.remove("active"); });
+        btn.classList.add("active");
+        document.getElementById("tab-" + btn.getAttribute("data-tab")).classList.add("active");
+      });
+    });
+
+    /* Lightbox (image principale + galerie) */
+    var lb = document.getElementById("lightbox");
+    var lbImg = document.getElementById("lightboxImg");
+    var lbCap = document.getElementById("lightboxCaption");
+    function openLb(src, cap) {
+      lbImg.src = src; lbImg.alt = cap; lbCap.textContent = cap;
+      lb.classList.add("open"); document.body.style.overflow = "hidden";
+    }
+    function closeLb() { lb.classList.remove("open"); document.body.style.overflow = ""; }
+    var mainImg = document.getElementById("artImg");
+    var frame = document.getElementById("stageFrame");
+    function openMain() { if (!frame.classList.contains("empty")) openLb(mainImg.src, mainImg.alt); }
+    mainImg.addEventListener("click", openMain);
+    document.getElementById("focusBtn").addEventListener("click", openMain);
+    document.querySelectorAll(".gallery-grid .ph img").forEach(function (img) {
+      img.addEventListener("click", function () {
+        if (!img.parentElement.classList.contains("empty") && !img.closest(".ph").classList.contains("empty")) {
+          openLb(img.src, img.alt);
+        }
+      });
+    });
+    document.getElementById("lightboxClose").addEventListener("click", closeLb);
+    lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeLb(); });
+  })();
+  </script>
+</body>
+</html>
