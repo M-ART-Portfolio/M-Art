@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection Philippe Jabre — M·Art</title>
+  <meta name="description" content="La collection Philippe Jabre à Beit Chabab : le Liban vu par les artistes, des orientalistes à Hockney et Warhol.">
+  <meta name="theme-color" content="#1a1814">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Collection Philippe Jabre — M·Art">
+  <meta property="og:description" content="La collection Philippe Jabre à Beit Chabab : le Liban vu par les artistes, des orientalistes à Hockney et Warhol.">
+  <meta property="og:image" content="https://m-art-portfolio.github.io/M-Art/jabre.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1814'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23c4a06a' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-brand page-link">M·Art</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active page-link" data-i18n="nav.works">Œuvres</a>
+        <a href="presentation.html" class="nav-link page-link" data-i18n="nav.about">À propos</a>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MUR DE MUSÉE -->
+  <section class="stage">
+    <div class="hero-bg"></div>
+    <div class="hero-noise"></div>
+
+    <a href="index.html" class="stage-back page-link">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-i18n="o.back">La collection</span>
+    </a>
+
+    <div class="stage-inner">
+      <figure class="stage-frame" id="stageFrame">
+        <button class="stage-zoom" id="focusBtn" title="Voir en grand" aria-label="Voir en grand">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M2 2h5M2 2v5M16 2h-5M16 2v5M2 16h5M2 16v-5M16 16h-5M16 16v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="stage-mat">
+          <img src="jabre.jpg" alt="Collection Philippe Jabre — Beit Chabab, Liban" id="artImg" onerror="document.getElementById('stageFrame').classList.add('empty')">
+          <div class="stage-hint">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+            <code>jabre.jpg</code>
+          </div>
+        </div>
+      </figure>
+
+      <!-- Cartel, comme au musée -->
+      <aside class="plaque" aria-label="Cartel">
+        <p class="plaque-artist" data-i18n="pl.artist">Collection Philippe Jabre</p>
+        <p class="plaque-title" data-i18n="pl.title"><em>Le Liban vu par les artistes</em></p>
+        <p class="plaque-loc" data-i18n="pl.lieu">Beit Chabab, Liban</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTENU -->
+  <main class="container">
+    <article class="oeuvre-body">
+      <div class="art-meta">
+        <span class="art-tag-plain" data-i18n="meta.tag">Collection</span>
+        <span class="art-sep" aria-hidden="true">·</span>
+        <span class="art-number">N° 001</span>
+      </div>
+
+      <h1 class="oeuvre-title" data-i18n="page.h1">Le Liban<br><em>vu par les artistes</em></h1>
+      <p class="oeuvre-artist" data-i18n="page.artist">Collection Philippe Jabre — Beit Chabab, Liban</p>
+
+      <div class="art-divider"></div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="regard" data-i18n="tab.regard">Mon regard</button>
+        <button class="tab" data-tab="histoire" data-i18n="tab.histoire">Histoire &amp; contexte</button>
+        <button class="tab" data-tab="images" data-i18n="tab.images">En images</button>
+      </div>
+
+      <div class="tab-content active" id="tab-regard">
+        <p data-i18n="regard.p1">Ce qui frappe d'abord, c'est le lieu lui-même : une maison de pierre où les œuvres vivent ensemble plutôt qu'elles ne s'alignent. On passe d'un paysage orientaliste à une affiche de cinéma, et le fil ne se rompt jamais.</p>
+        <p data-i18n="regard.p2">J'ai aimé cette idée d'un pays raconté par le regard des autres — voyageurs, peintres de passage — et ce que cela dit du Liban : un territoire autant rêvé que réel.</p>
+        <p data-i18n="regard.p3">Une collection qui se visite comme on feuillette un album de famille élargi à tout un pays.</p>
+      </div>
+
+      <div class="tab-content" id="tab-histoire">
+        <p data-i18n="histoire.p1">À Beit Chabab, village du Metn réputé pour ses fondeurs de cloches, le collectionneur Philippe Jabre a transformé la maison d'été familiale — une bâtisse en pierre du XIXe siècle — et une ancienne fonderie de cloches en maison-musée pour abriter sa collection.</p>
+        <p data-i18n="histoire.p2">Constituée depuis 1989 avec le conservateur Gaby Daher, la collection suit un fil unique : le Liban vu par les artistes. Peintures orientalistes et vues de voyageurs étrangers sur quatre siècles y côtoient des œuvres modernes — dont David Hockney et Andy Warhol —, des photographies, des affiches de tourisme et de cinéma et des objets.</p>
+        <p data-i18n="histoire.p3">Présentée notamment au musée Sursock et à la Beirut Art Fair, elle compose un portrait polymorphe du pays du Cèdre : paysages, scènes de rue, mémoire visuelle d'un Liban traversé par les regards.</p>
+      </div>
+
+      <div class="tab-content" id="tab-images">
+        <div class="gallery-grid">
+          <figure class="ph">
+            <img src="jabre-1.jpg" alt="Collection Philippe Jabre — photo 1" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>jabre-1.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="jabre-2.jpg" alt="Collection Philippe Jabre — photo 2" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>jabre-2.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="jabre-3.jpg" alt="Collection Philippe Jabre — photo 3" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>jabre-3.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="jabre-4.jpg" alt="Collection Philippe Jabre — photo 4" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>jabre-4.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="jabre-5.jpg" alt="Collection Philippe Jabre — photo 5" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>jabre-5.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="jabre-6.jpg" alt="Collection Philippe Jabre — photo 6" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>jabre-6.jpg</code>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- TEMPS FORTS -->
+    <section class="highlights reveal">
+      <p class="highlights-title"><span data-i18n="hl.title">Ce qui m'a marquée</span></p>
+      <div class="highlights-grid">
+        <div class="hl">
+          <span class="hl-num">I</span>
+          <h4 data-i18n="hl1.t">La maison et la fonderie</h4>
+          <p data-i18n="hl1.p">Une bâtisse du XIXe siècle et une ancienne fonderie de cloches transformées en musée : ici, le lieu fait partie de la collection.</p>
+        </div>
+        <div class="hl">
+          <span class="hl-num">II</span>
+          <h4 data-i18n="hl2.t">Quatre siècles de regards</h4>
+          <p data-i18n="hl2.p">Peintres voyageurs et orientalistes : le Liban vu de l'extérieur, quelque part entre le document et le rêve.</p>
+        </div>
+        <div class="hl">
+          <span class="hl-num">III</span>
+          <h4 data-i18n="hl3.t">Hockney & Warhol au village</h4>
+          <p data-i18n="hl3.p">Des icônes de l'art moderne accrochées à Beit Chabab, en dialogue avec les vues anciennes du pays.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entrée précédente / suivante -->
+    <nav class="oeuvre-nav reveal" aria-label="Autres entrées">
+      <a class="onav onav-next page-link" href="taylor.html">
+        <span class="onav-label"><span data-i18n="nav.next">Entrée suivante</span> →</span>
+        <span class="onav-title" data-i18n="nav.next.title">Henry Taylor — Where thoughts provoke</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <p class="footer-brand">M·Art</p>
+      <p class="footer-copy" data-i18n="footer.copy">Un regard personnel sur l'art qui marque.</p>
+      <a href="index.html" class="footer-link page-link" data-i18n="footer.works">Œuvres →</a>
+    </div>
+  </footer>
+
+  <script>
+  /* ============ Page 100% autonome — aucun fichier JS externe ============ */
+  (function () {
+    var I18N = {"fr": {"page.title": "Collection Philippe Jabre — M·Art", "meta.tag": "Collection", "page.h1": "Le Liban<br><em>vu par les artistes</em>", "page.artist": "Collection Philippe Jabre — Beit Chabab, Liban", "pl.artist": "Collection Philippe Jabre", "pl.title": "<em>Le Liban vu par les artistes</em>", "pl.lieu": "Beit Chabab, Liban", "regard.p1": "Ce qui frappe d'abord, c'est le lieu lui-même : une maison de pierre où les œuvres vivent ensemble plutôt qu'elles ne s'alignent. On passe d'un paysage orientaliste à une affiche de cinéma, et le fil ne se rompt jamais.", "regard.p2": "J'ai aimé cette idée d'un pays raconté par le regard des autres — voyageurs, peintres de passage — et ce que cela dit du Liban : un territoire autant rêvé que réel.", "regard.p3": "Une collection qui se visite comme on feuillette un album de famille élargi à tout un pays.", "histoire.p1": "À Beit Chabab, village du Metn réputé pour ses fondeurs de cloches, le collectionneur Philippe Jabre a transformé la maison d'été familiale — une bâtisse en pierre du XIXe siècle — et une ancienne fonderie de cloches en maison-musée pour abriter sa collection.", "histoire.p2": "Constituée depuis 1989 avec le conservateur Gaby Daher, la collection suit un fil unique : le Liban vu par les artistes. Peintures orientalistes et vues de voyageurs étrangers sur quatre siècles y côtoient des œuvres modernes — dont David Hockney et Andy Warhol —, des photographies, des affiches de tourisme et de cinéma et des objets.", "histoire.p3": "Présentée notamment au musée Sursock et à la Beirut Art Fair, elle compose un portrait polymorphe du pays du Cèdre : paysages, scènes de rue, mémoire visuelle d'un Liban traversé par les regards.", "hl1.t": "La maison et la fonderie", "hl1.p": "Une bâtisse du XIXe siècle et une ancienne fonderie de cloches transformées en musée : ici, le lieu fait partie de la collection.", "hl2.t": "Quatre siècles de regards", "hl2.p": "Peintres voyageurs et orientalistes : le Liban vu de l'extérieur, quelque part entre le document et le rêve.", "hl3.t": "Hockney & Warhol au village", "hl3.p": "Des icônes de l'art moderne accrochées à Beit Chabab, en dialogue avec les vues anciennes du pays.", "nav.works": "Œuvres", "nav.about": "À propos", "o.back": "La collection", "tab.regard": "Mon regard", "tab.histoire": "Histoire & contexte", "tab.images": "En images", "ph.add": "Image à ajouter au dépôt :", "hl.title": "Ce qui m'a marquée", "nav.prev": "Entrée précédente", "nav.next": "Entrée suivante", "footer.copy": "Un regard personnel sur l'art qui marque.", "footer.works": "Œuvres →", "nav.next.title": "Henry Taylor — Where thoughts provoke"}, "en": {"page.title": "The Philippe Jabre Collection — M·Art", "meta.tag": "Collection", "page.h1": "Lebanon<br><em>through artists' eyes</em>", "page.artist": "The Philippe Jabre Collection — Beit Chabab, Lebanon", "pl.artist": "The Philippe Jabre Collection", "pl.title": "<em>Lebanon through artists' eyes</em>", "pl.lieu": "Beit Chabab, Lebanon", "regard.p1": "What strikes you first is the place itself: a stone house where the works live together rather than lining up. You move from an Orientalist landscape to a cinema poster, and the thread never breaks.", "regard.p2": "I loved the idea of a country told through the eyes of others — travellers, passing painters — and what that says about Lebanon: a land as dreamed as it is real.", "regard.p3": "A collection you visit the way you leaf through a family album widened to a whole country.", "histoire.p1": "In Beit Chabab, a Metn village famous for its bell founders, collector Philippe Jabre turned the family summer house — a 19th-century stone building — and a former bell foundry into a house-museum for his collection.", "histoire.p2": "Built since 1989 with curator Gaby Daher, the collection follows a single thread: Lebanon as seen by artists. Orientalist paintings and four centuries of views by foreign travellers sit alongside modern works — including David Hockney and Andy Warhol —, photographs, tourism and cinema posters, and objects.", "histoire.p3": "Shown at the Sursock Museum and the Beirut Art Fair among others, it forms a many-sided portrait of Lebanon: landscapes, street scenes, the visual memory of a country shaped by outside eyes.", "hl1.t": "The house and the foundry", "hl1.p": "A 19th-century stone building and a former bell foundry turned into a museum: here, the place is part of the collection.", "hl2.t": "Four centuries of gazes", "hl2.p": "Travelling painters and Orientalists: Lebanon seen from the outside, somewhere between document and dream.", "hl3.t": "Hockney & Warhol in the village", "hl3.p": "Icons of modern art hanging in Beit Chabab, in dialogue with old views of the country.", "nav.works": "Works", "nav.about": "About", "o.back": "The collection", "tab.regard": "My eye", "tab.histoire": "History & context", "tab.images": "In pictures", "ph.add": "Image to add to the repo:", "hl.title": "What stayed with me", "nav.prev": "Previous entry", "nav.next": "Next entry", "footer.copy": "A personal perspective on art that leaves a mark.", "footer.works": "Works →", "nav.next.title": "Henry Taylor — Where thoughts provoke"}};
+
+    function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    function storeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+    function setLang(lang) {
+      storeSet("mart-lang", lang);
+      document.documentElement.lang = lang;
+      var d = I18N[lang];
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        if (d[key] !== undefined) el.innerHTML = d[key];
+      });
+      document.querySelectorAll(".lang-btn").forEach(function (b) {
+        b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+      });
+      document.title = d["page.title"];
+    }
+    document.querySelectorAll(".lang-btn").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+    });
+    setLang(storeGet("mart-lang") || "fr");
+
+    /* Barre de progression + nav au scroll */
+    var bar = document.getElementById("progressBar");
+    var nav = document.getElementById("mainNav");
+    window.addEventListener("scroll", function () {
+      var h = document.body.scrollHeight - window.innerHeight;
+      if (bar) bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
+      if (nav) nav.classList.toggle("scrolled", window.scrollY > 60);
+    }, { passive: true });
+
+    /* Transitions de page */
+    var overlay = document.getElementById("pageTransition");
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest ? e.target.closest("a.page-link") : null;
+      if (!link) return;
+      var href = link.getAttribute("href");
+      if (!href || href.charAt(0) === "#") return;
+      e.preventDefault();
+      if (overlay) overlay.classList.add("active");
+      setTimeout(function () { window.location.href = href; }, 360);
+    });
+    window.addEventListener("pageshow", function () {
+      if (overlay) overlay.classList.remove("active");
+    });
+
+    /* Apparition au scroll */
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) en.target.classList.add("visible"); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll(".reveal").forEach(function (el) { obs.observe(el); });
+
+    /* Onglets */
+    document.querySelectorAll(".tab").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".tab").forEach(function (b) { b.classList.remove("active"); });
+        document.querySelectorAll(".tab-content").forEach(function (c) { c.classList.remove("active"); });
+        btn.classList.add("active");
+        document.getElementById("tab-" + btn.getAttribute("data-tab")).classList.add("active");
+      });
+    });
+
+    /* Lightbox (image principale + galerie) */
+    var lb = document.getElementById("lightbox");
+    var lbImg = document.getElementById("lightboxImg");
+    var lbCap = document.getElementById("lightboxCaption");
+    function openLb(src, cap) {
+      lbImg.src = src; lbImg.alt = cap; lbCap.textContent = cap;
+      lb.classList.add("open"); document.body.style.overflow = "hidden";
+    }
+    function closeLb() { lb.classList.remove("open"); document.body.style.overflow = ""; }
+    var mainImg = document.getElementById("artImg");
+    var frame = document.getElementById("stageFrame");
+    function openMain() { if (!frame.classList.contains("empty")) openLb(mainImg.src, mainImg.alt); }
+    mainImg.addEventListener("click", openMain);
+    document.getElementById("focusBtn").addEventListener("click", openMain);
+    document.querySelectorAll(".gallery-grid .ph img").forEach(function (img) {
+      img.addEventListener("click", function () {
+        if (!img.parentElement.classList.contains("empty") && !img.closest(".ph").classList.contains("empty")) {
+          openLb(img.src, img.alt);
+        }
+      });
+    });
+    document.getElementById("lightboxClose").addEventListener("click", closeLb);
+    lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeLb(); });
+  })();
+  </script>
+</body>
+</html>
