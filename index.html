@@ -4,17 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M·Art — Regards sur des œuvres choisies</title>
-  <meta name="description" content="M·Art — un portfolio d'art personnel : des œuvres choisies, leur histoire et un regard sensible, avec une attention particulière aux artistes femmes.">
+  <meta name="description" content="M·Art — un portfolio d'art personnel : des œuvres et expositions choisies, leur histoire et un regard sensible, avec une attention particulière aux artistes femmes.">
   <meta name="theme-color" content="#1a1814">
-
-  <!-- Aperçu quand le lien est partagé -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="M·Art — Regards sur des œuvres choisies">
-  <meta property="og:description" content="Des œuvres choisies, racontées de près : leur histoire, et pourquoi elles touchent.">
-  <meta property="og:image" content="https://flambardgautier-wq.github.io/M-Art/lady.png">
-
+  <meta property="og:description" content="Des œuvres et expositions choisies, racontées de près : leur histoire, et pourquoi elles touchent.">
+  <meta property="og:image" content="https://m-art-portfolio.github.io/M-Art/lady.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1814'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23c4a06a' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -42,7 +38,7 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero" id="hero">
+  <header class="hero">
     <div class="hero-bg"></div>
     <div class="hero-noise"></div>
     <div class="hero-content">
@@ -74,10 +70,111 @@
     <div class="coll-head">
       <span class="coll-label" data-i18n="coll.label">La collection</span>
       <span class="coll-line" aria-hidden="true"></span>
-      <span class="coll-count" id="collCount"></span>
+      <span class="coll-count" data-i18n="coll.count">4 entrées · d'autres à venir</span>
     </div>
 
-    <div class="works-grid" id="worksGrid"></div>
+    <div class="works-grid">
+
+      <!-- 001 — Collection Philippe Jabre -->
+      <a class="work-card reveal page-link" href="jabre.html">
+        <div class="work-media">
+          <img src="jabre.jpg" alt="Collection Philippe Jabre — Beit Chabab" loading="lazy" decoding="async" onerror="this.closest('.work-media').classList.add('media-empty')">
+          <div class="media-hint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+            <code>jabre.jpg</code>
+          </div>
+          <span class="work-hover"><span data-i18n="card.discover">Découvrir</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+        <div class="work-cartel">
+          <span class="cartel-num">N° 001</span>
+          <h3 class="cartel-title" data-i18n="c1.t">Collection Philippe Jabre</h3>
+          <p class="cartel-artist" data-i18n="c1.a">Le Liban vu par les artistes</p>
+          <p class="cartel-details" data-i18n="c1.d">Beit Chabab, Liban</p>
+        </div>
+      </a>
+
+      <!-- 002 — Henry Taylor -->
+      <a class="work-card reveal page-link" href="taylor.html" style="transition-delay:90ms">
+        <div class="work-media">
+          <img src="taylor.jpg" alt="Henry Taylor — Where thoughts provoke" loading="lazy" decoding="async" onerror="this.closest('.work-media').classList.add('media-empty')">
+          <div class="media-hint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+            <code>taylor.jpg</code>
+          </div>
+          <span class="work-hover"><span data-i18n="card.discover">Découvrir</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+        <div class="work-cartel">
+          <span class="cartel-num">N° 002</span>
+          <h3 class="cartel-title">Henry Taylor — Where thoughts provoke</h3>
+          <p class="cartel-artist" data-i18n="c2.a">Henry Taylor <span>(né en 1958)</span></p>
+          <p class="cartel-details">Musée national Picasso-Paris · 2026</p>
+        </div>
+      </a>
+
+      <!-- 003 — O'Keeffe & Moore -->
+      <a class="work-card reveal page-link" href="okeeffe-moore.html">
+        <div class="work-media">
+          <img src="okeeffe-moore.jpg" alt="O'Keeffe & Moore — Giants of Modern Art" loading="lazy" decoding="async" onerror="this.closest('.work-media').classList.add('media-empty')">
+          <div class="media-hint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+            <code>okeeffe-moore.jpg</code>
+          </div>
+          <span class="work-hover"><span data-i18n="card.discover">Découvrir</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+        <div class="work-cartel">
+          <span class="cartel-num">N° 003</span>
+          <h3 class="cartel-title">O'Keeffe &amp; Moore — Giants of Modern Art</h3>
+          <p class="cartel-artist">Georgia O'Keeffe &amp; Henry Moore <span>(1887–1986 · 1898–1986)</span></p>
+          <p class="cartel-details" data-i18n="c3.d">Musée des beaux-arts de Montréal · 2024</p>
+        </div>
+      </a>
+
+      <!-- 004 — La Dame en blanc -->
+      <a class="work-card reveal page-link" href="dame-en-blanc.html" style="transition-delay:90ms">
+        <div class="work-media">
+          <img src="lady.png" alt="La Dame en blanc — Marie Bracquemond" loading="lazy" decoding="async" onerror="this.closest('.work-media').classList.add('media-empty')">
+          <div class="media-hint">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+            <code>lady.png</code>
+          </div>
+          <span class="work-hover"><span data-i18n="card.discover">Découvrir</span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+        <div class="work-cartel">
+          <span class="cartel-num">N° 004</span>
+          <h3 class="cartel-title" data-i18n="c4.t">La Dame en blanc</h3>
+          <p class="cartel-artist">Marie Bracquemond <span>(1840 – 1916)</span></p>
+          <p class="cartel-details" data-i18n="c4.d">Huile sur toile · 1880</p>
+        </div>
+      </a>
+
+      <!-- 005 — À venir -->
+      <div class="work-card soon reveal">
+        <div class="work-media soon-media">
+          <div class="soon-inner">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <span data-i18n="soon.badge">Bientôt</span>
+          </div>
+        </div>
+        <div class="work-cartel">
+          <span class="cartel-num">N° 005</span>
+          <h3 class="cartel-title soon-title" data-i18n="soon.title">Prochaine entrée</h3>
+          <p class="cartel-details" data-i18n="soon.text">Une nouvelle œuvre ou exposition choisie avec soin arrivera bientôt.</p>
+        </div>
+      </div>
+
+    </div>
   </main>
 
   <!-- FOOTER -->
@@ -89,89 +186,117 @@
     </div>
   </footer>
 
-  <script src="oeuvres.js"></script>
   <script>
-    // =============================================
-    // GRILLE DES ŒUVRES — générée depuis oeuvres.js
-    // =============================================
-    let firstRender = true;
-
-    function pad(n) { return String(n).padStart(3, "0"); }
-
-    function renderGrid(lang) {
-      const grid = document.getElementById("worksGrid");
-      const t = UI[lang];
-      let html = "";
-
-      OEUVRES.forEach(function (o, i) {
-        const d = o[lang];
-        html +=
-          '<a class="work-card reveal page-link" href="oeuvre.html?id=' + o.id + '" style="transition-delay:' + (i % 2) * 90 + 'ms">' +
-            '<div class="work-media">' +
-              '<img src="' + o.image + '" alt="' + d.titreCourt + ' — ' + o.artiste + '" loading="lazy" decoding="async">' +
-              '<span class="work-hover"><span>' + t["card.discover"] + '</span>' +
-                '<svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
-              '</span>' +
-            '</div>' +
-            '<div class="work-cartel">' +
-              '<span class="cartel-num">N° ' + pad(i + 1) + '</span>' +
-              '<h3 class="cartel-title">' + d.titreCourt + '</h3>' +
-              '<p class="cartel-artist">' + o.artiste + ' <span>(' + o.dates + ')</span></p>' +
-              '<p class="cartel-details">' + d.technique + ' · ' + o.annee + '</p>' +
-            '</div>' +
-          '</a>';
-      });
-
-      // Tuile « à venir »
-      html +=
-        '<div class="work-card soon reveal" style="transition-delay:' + (OEUVRES.length % 2) * 90 + 'ms">' +
-          '<div class="work-media soon-media">' +
-            '<div class="soon-inner">' +
-              '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>' +
-              '<span>' + t["soon.badge"] + '</span>' +
-            '</div>' +
-          '</div>' +
-          '<div class="work-cartel">' +
-            '<span class="cartel-num">N° ' + pad(OEUVRES.length + 1) + '</span>' +
-            '<h3 class="cartel-title soon-title">' + t["soon.title"] + '</h3>' +
-            '<p class="cartel-details">' + t["soon.text"] + '</p>' +
-          '</div>' +
-        '</div>';
-
-      grid.innerHTML = html;
-
-      // Compteur
-      const n = OEUVRES.length;
-      document.getElementById("collCount").textContent =
-        n + " " + (n > 1 ? t["coll.many"] : t["coll.one"]) + " · " + t["coll.soon"];
-
-      // Apparition au scroll (seulement au premier rendu)
-      const cards = grid.querySelectorAll(".reveal");
-      if (firstRender) {
-        const obs = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add("visible"); });
-        }, { threshold: 0.08 });
-        cards.forEach(function (el) { obs.observe(el); });
-        firstRender = false;
-      } else {
-        cards.forEach(function (el) { el.classList.add("visible"); });
+  /* ============ Page 100% autonome — aucun fichier JS externe ============ */
+  (function () {
+    var I18N = {
+      fr: {
+        "nav.works": "Œuvres",
+        "nav.about": "À propos",
+        "hero.eyebrow": "Portfolio artistique",
+        "hero.title": "Des œuvres choisies,<br><em>racontées de près</em>",
+        "hero.sub": "Ce qu'elles montrent, leur histoire, et pourquoi elles me touchent.",
+        "hero.cta": "Voir la collection",
+        "quote.text": "« Les hommes me classent comme la meilleure femme peintre. Je pense être l'un des meilleurs peintres. »",
+        "quote.author": "— Georgia O'Keeffe",
+        "coll.label": "La collection",
+        "coll.count": "4 entrées · d'autres à venir",
+        "card.discover": "Découvrir",
+        "ph.add": "Image à ajouter au dépôt :",
+        "c1.t": "Collection Philippe Jabre",
+        "c1.a": "Le Liban vu par les artistes",
+        "c1.d": "Beit Chabab, Liban",
+        "c2.a": "Henry Taylor <span>(né en 1958)</span>",
+        "c3.d": "Musée des beaux-arts de Montréal · 2024",
+        "c4.t": "La Dame en blanc",
+        "c4.d": "Huile sur toile · 1880",
+        "soon.badge": "Bientôt",
+        "soon.title": "Prochaine entrée",
+        "soon.text": "Une nouvelle œuvre ou exposition choisie avec soin arrivera bientôt.",
+        "footer.copy": "Un regard personnel sur l'art qui marque.",
+        "footer.about": "À propos →",
+        "page.title": "M·Art — Regards sur des œuvres choisies"
+      },
+      en: {
+        "nav.works": "Works",
+        "nav.about": "About",
+        "hero.eyebrow": "Artistic portfolio",
+        "hero.title": "Chosen works,<br><em>seen up close</em>",
+        "hero.sub": "What they show, their story, and why they move me.",
+        "hero.cta": "View the collection",
+        "quote.text": "\u201CMen put me down as the best woman painter. I think I'm one of the best painters.\u201D",
+        "quote.author": "— Georgia O'Keeffe",
+        "coll.label": "The collection",
+        "coll.count": "4 entries · more to come",
+        "card.discover": "Discover",
+        "ph.add": "Image to add to the repo:",
+        "c1.t": "The Philippe Jabre Collection",
+        "c1.a": "Lebanon through artists' eyes",
+        "c1.d": "Beit Chabab, Lebanon",
+        "c2.a": "Henry Taylor <span>(b. 1958)</span>",
+        "c3.d": "Montreal Museum of Fine Arts · 2024",
+        "c4.t": "The Lady in White",
+        "c4.d": "Oil on canvas · 1880",
+        "soon.badge": "Soon",
+        "soon.title": "Next entry",
+        "soon.text": "A new, carefully chosen work or exhibition is coming soon.",
+        "footer.copy": "A personal perspective on art that leaves a mark.",
+        "footer.about": "About →",
+        "page.title": "M·Art — Perspectives on chosen works"
       }
-    }
+    };
 
-    // =============================================
-    // LANGUE
-    // =============================================
+    function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    function storeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
     function setLang(lang) {
-      applyUI(lang);
-      renderGrid(lang);
-      document.title = lang === "fr"
-        ? "M·Art — Regards sur des œuvres choisies"
-        : "M·Art — Perspectives on chosen works";
+      storeSet("mart-lang", lang);
+      document.documentElement.lang = lang;
+      var d = I18N[lang];
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        if (d[key] !== undefined) el.innerHTML = d[key];
+      });
+      document.querySelectorAll(".lang-btn").forEach(function (b) {
+        b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+      });
+      document.title = d["page.title"];
     }
+    document.querySelectorAll(".lang-btn").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+    });
+    setLang(storeGet("mart-lang") || "fr");
 
-    initChrome();
-    initLangButtons(setLang);
-    setLang(getLang());
+    /* Barre de progression + nav au scroll */
+    var bar = document.getElementById("progressBar");
+    var nav = document.getElementById("mainNav");
+    window.addEventListener("scroll", function () {
+      var h = document.body.scrollHeight - window.innerHeight;
+      if (bar) bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
+      if (nav) nav.classList.toggle("scrolled", window.scrollY > 60);
+    }, { passive: true });
+
+    /* Transitions de page */
+    var overlay = document.getElementById("pageTransition");
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest ? e.target.closest("a.page-link") : null;
+      if (!link) return;
+      var href = link.getAttribute("href");
+      if (!href || href.charAt(0) === "#") return;
+      e.preventDefault();
+      if (overlay) overlay.classList.add("active");
+      setTimeout(function () { window.location.href = href; }, 360);
+    });
+    window.addEventListener("pageshow", function () {
+      if (overlay) overlay.classList.remove("active");
+    });
+
+    /* Apparition au scroll */
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) en.target.classList.add("visible"); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll(".reveal").forEach(function (el) { obs.observe(el); });
+  })();
   </script>
 </body>
 </html>
