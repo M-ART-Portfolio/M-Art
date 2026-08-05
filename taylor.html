@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry Taylor — Where thoughts provoke — M·Art</title>
+  <meta name="description" content="Henry Taylor au musée national Picasso-Paris : première rétrospective française du peintre américain, 8 avril – 6 septembre 2026.">
+  <meta name="theme-color" content="#1a1814">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Henry Taylor — Where thoughts provoke — M·Art">
+  <meta property="og:description" content="Henry Taylor au musée national Picasso-Paris : première rétrospective française du peintre américain, 8 avril – 6 septembre 2026.">
+  <meta property="og:image" content="https://m-art-portfolio.github.io/M-Art/taylor.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1814'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23c4a06a' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav-brand page-link">M·Art</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active page-link" data-i18n="nav.works">Œuvres</a>
+        <a href="presentation.html" class="nav-link page-link" data-i18n="nav.about">À propos</a>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MUR DE MUSÉE -->
+  <section class="stage">
+    <div class="hero-bg"></div>
+    <div class="hero-noise"></div>
+
+    <a href="index.html" class="stage-back page-link">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span data-i18n="o.back">La collection</span>
+    </a>
+
+    <div class="stage-inner">
+      <figure class="stage-frame" id="stageFrame">
+        <button class="stage-zoom" id="focusBtn" title="Voir en grand" aria-label="Voir en grand">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M2 2h5M2 2v5M16 2h-5M16 2v5M2 16h5M2 16v-5M16 16h-5M16 16v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="stage-mat">
+          <img src="taylor.jpg" alt="Henry Taylor — Where thoughts provoke, musée Picasso, Paris" id="artImg" onerror="document.getElementById('stageFrame').classList.add('empty')">
+          <div class="stage-hint">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+            <code>taylor.jpg</code>
+          </div>
+        </div>
+      </figure>
+
+      <!-- Cartel, comme au musée -->
+      <aside class="plaque" aria-label="Cartel">
+        <p class="plaque-artist" data-i18n="pl.artist">Henry Taylor (né en 1958)</p>
+        <p class="plaque-title" data-i18n="pl.title"><em>Where thoughts provoke</em>, 2026</p>
+        <p class="plaque-loc" data-i18n="pl.lieu">Musée national Picasso-Paris</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTENU -->
+  <main class="container">
+    <article class="oeuvre-body">
+      <div class="art-meta">
+        <span class="art-tag-plain" data-i18n="meta.tag">Exposition</span>
+        <span class="art-sep" aria-hidden="true">·</span>
+        <span class="art-number">N° 002</span>
+      </div>
+
+      <h1 class="oeuvre-title" data-i18n="page.h1">Where thoughts<br><em>provoke</em></h1>
+      <p class="oeuvre-artist" data-i18n="page.artist">Henry Taylor (né en 1958) — Musée national Picasso-Paris, 2026</p>
+
+      <div class="art-divider"></div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="regard" data-i18n="tab.regard">Mon regard</button>
+        <button class="tab" data-tab="histoire" data-i18n="tab.histoire">Histoire &amp; contexte</button>
+        <button class="tab" data-tab="images" data-i18n="tab.images">En images</button>
+      </div>
+
+      <div class="tab-content active" id="tab-regard">
+        <p data-i18n="regard.p1">Devant les toiles de Henry Taylor, on a l'impression que la peinture vient d'être posée — vite, sans repentir — et pourtant chaque visage tient debout avec une dignité incroyable.</p>
+        <p data-i18n="regard.p2">Ce que je retiens : la manière dont il mêle l'intime et le politique sans jamais forcer. Un portrait d'ami côtoie une scène d'histoire américaine, et les deux se répondent.</p>
+        <p data-i18n="regard.p3">Le voir à l'hôtel Salé ajoute une couche : Taylor dialoguant avec l'histoire de l'art depuis le musée Picasso, c'est troublant et juste.</p>
+      </div>
+
+      <div class="tab-content" id="tab-histoire">
+        <p data-i18n="histoire.p1">Henry Taylor, né en 1958 en Californie, est l'une des figures majeures de la peinture américaine contemporaine : amis, proches, anonymes ou célébrités, peints avec une immédiateté et une humanité désarmantes, entre mémoire personnelle et réalité sociale de l'Amérique.</p>
+        <p data-i18n="histoire.p2">« Where thoughts provoke », présentée au musée national Picasso-Paris du 8 avril au 6 septembre 2026, est sa première grande exposition en France : une centaine d'œuvres — peintures, sculptures, installations — sur deux étages et treize salles, conçue avec l'artiste. Le titre vient d'un tableau de 2015, Where Thoughts provoke, getting deep in shallow water.</p>
+        <p data-i18n="histoire.p3">L'exposition s'inscrit dans le cycle du musée sur la réception de Picasso par la scène américaine, après Faith Ringgold, Jackson Pollock et Philip Guston. Taylor a eu une rétrospective majeure au MOCA de Los Angeles en 2022 puis au Whitney à New York en 2023 ; ses œuvres figurent au MET, au MoMA et au Studio Museum de Harlem.</p>
+      </div>
+
+      <div class="tab-content" id="tab-images">
+        <div class="gallery-grid">
+          <figure class="ph">
+            <img src="taylor-1.jpg" alt="Henry Taylor — Where thoughts provoke — photo 1" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>taylor-1.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="taylor-2.jpg" alt="Henry Taylor — Where thoughts provoke — photo 2" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>taylor-2.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="taylor-3.jpg" alt="Henry Taylor — Where thoughts provoke — photo 3" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>taylor-3.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="taylor-4.jpg" alt="Henry Taylor — Where thoughts provoke — photo 4" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>taylor-4.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="taylor-5.jpg" alt="Henry Taylor — Where thoughts provoke — photo 5" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>taylor-5.jpg</code>
+            </figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="taylor-6.jpg" alt="Henry Taylor — Where thoughts provoke — photo 6" loading="lazy" onerror="this.closest('.ph').classList.add('empty')">
+            <figcaption class="ph-hint">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.2"/><circle cx="8.5" cy="10" r="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M21 16l-5-5-9 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="ph.add">Image à ajouter au dépôt :</span>
+              <code>taylor-6.jpg</code>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- TEMPS FORTS -->
+    <section class="highlights reveal">
+      <p class="highlights-title"><span data-i18n="hl.title">Ce qui m'a marquée</span></p>
+      <div class="highlights-grid">
+        <div class="hl">
+          <span class="hl-num">I</span>
+          <h4 data-i18n="hl1.t">Screaming Head (1990)</h4>
+          <p data-i18n="hl1.p">Un cri peint dès les débuts du parcours, qui donne le ton : brut, direct, impossible à oublier.</p>
+        </div>
+        <div class="hl">
+          <span class="hl-num">II</span>
+          <h4 data-i18n="hl2.t">It's like a jungle (2011)</h4>
+          <p data-i18n="hl2.p">Balais, caisses, objets récupérés : une installation entière qui fait entrer la rue américaine dans le musée.</p>
+        </div>
+        <div class="hl">
+          <span class="hl-num">III</span>
+          <h4 data-i18n="hl3.t">Le tableau-titre (2015)</h4>
+          <p data-i18n="hl3.p">Where Thoughts provoke, getting deep in shallow water : discret, presque caché dans l'accrochage — et pourtant tout est là.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entrée précédente / suivante -->
+    <nav class="oeuvre-nav reveal" aria-label="Autres entrées">
+      <a class="onav onav-prev page-link" href="jabre.html">
+        <span class="onav-label">← <span data-i18n="nav.prev">Entrée précédente</span></span>
+        <span class="onav-title" data-i18n="nav.prev.title">Collection Philippe Jabre</span>
+      </a>
+      <a class="onav onav-next page-link" href="okeeffe-moore.html">
+        <span class="onav-label"><span data-i18n="nav.next">Entrée suivante</span> →</span>
+        <span class="onav-title" data-i18n="nav.next.title">O'Keeffe & Moore — Giants of Modern Art</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <p class="footer-brand">M·Art</p>
+      <p class="footer-copy" data-i18n="footer.copy">Un regard personnel sur l'art qui marque.</p>
+      <a href="index.html" class="footer-link page-link" data-i18n="footer.works">Œuvres →</a>
+    </div>
+  </footer>
+
+  <script>
+  /* ============ Page 100% autonome — aucun fichier JS externe ============ */
+  (function () {
+    var I18N = {"fr": {"page.title": "Henry Taylor — Where thoughts provoke — M·Art", "meta.tag": "Exposition", "page.h1": "Where thoughts<br><em>provoke</em>", "page.artist": "Henry Taylor (né en 1958) — Musée national Picasso-Paris, 2026", "pl.artist": "Henry Taylor (né en 1958)", "pl.title": "<em>Where thoughts provoke</em>, 2026", "pl.lieu": "Musée national Picasso-Paris", "regard.p1": "Devant les toiles de Henry Taylor, on a l'impression que la peinture vient d'être posée — vite, sans repentir — et pourtant chaque visage tient debout avec une dignité incroyable.", "regard.p2": "Ce que je retiens : la manière dont il mêle l'intime et le politique sans jamais forcer. Un portrait d'ami côtoie une scène d'histoire américaine, et les deux se répondent.", "regard.p3": "Le voir à l'hôtel Salé ajoute une couche : Taylor dialoguant avec l'histoire de l'art depuis le musée Picasso, c'est troublant et juste.", "histoire.p1": "Henry Taylor, né en 1958 en Californie, est l'une des figures majeures de la peinture américaine contemporaine : amis, proches, anonymes ou célébrités, peints avec une immédiateté et une humanité désarmantes, entre mémoire personnelle et réalité sociale de l'Amérique.", "histoire.p2": "« Where thoughts provoke », présentée au musée national Picasso-Paris du 8 avril au 6 septembre 2026, est sa première grande exposition en France : une centaine d'œuvres — peintures, sculptures, installations — sur deux étages et treize salles, conçue avec l'artiste. Le titre vient d'un tableau de 2015, Where Thoughts provoke, getting deep in shallow water.", "histoire.p3": "L'exposition s'inscrit dans le cycle du musée sur la réception de Picasso par la scène américaine, après Faith Ringgold, Jackson Pollock et Philip Guston. Taylor a eu une rétrospective majeure au MOCA de Los Angeles en 2022 puis au Whitney à New York en 2023 ; ses œuvres figurent au MET, au MoMA et au Studio Museum de Harlem.", "hl1.t": "Screaming Head (1990)", "hl1.p": "Un cri peint dès les débuts du parcours, qui donne le ton : brut, direct, impossible à oublier.", "hl2.t": "It's like a jungle (2011)", "hl2.p": "Balais, caisses, objets récupérés : une installation entière qui fait entrer la rue américaine dans le musée.", "hl3.t": "Le tableau-titre (2015)", "hl3.p": "Where Thoughts provoke, getting deep in shallow water : discret, presque caché dans l'accrochage — et pourtant tout est là.", "nav.works": "Œuvres", "nav.about": "À propos", "o.back": "La collection", "tab.regard": "Mon regard", "tab.histoire": "Histoire & contexte", "tab.images": "En images", "ph.add": "Image à ajouter au dépôt :", "hl.title": "Ce qui m'a marquée", "nav.prev": "Entrée précédente", "nav.next": "Entrée suivante", "footer.copy": "Un regard personnel sur l'art qui marque.", "footer.works": "Œuvres →", "nav.prev.title": "Collection Philippe Jabre", "nav.next.title": "O'Keeffe & Moore — Giants of Modern Art"}, "en": {"page.title": "Henry Taylor — Where thoughts provoke — M·Art", "meta.tag": "Exhibition", "page.h1": "Where thoughts<br><em>provoke</em>", "page.artist": "Henry Taylor (b. 1958) — Musée national Picasso-Paris, 2026", "pl.artist": "Henry Taylor (b. 1958)", "pl.title": "<em>Where thoughts provoke</em>, 2026", "pl.lieu": "Musée national Picasso-Paris", "regard.p1": "In front of Henry Taylor's canvases, the paint feels freshly laid — fast, unrevised — and yet every face stands with incredible dignity.", "regard.p2": "What stays with me is how he blends the intimate and the political without ever forcing it. A portrait of a friend sits next to a scene of American history, and the two answer each other.", "regard.p3": "Seeing it at the Hôtel Salé adds a layer: Taylor in dialogue with art history from inside the Picasso museum feels both unsettling and right.", "histoire.p1": "Henry Taylor, born in 1958 in California, is one of the major figures of contemporary American painting: friends, family, strangers and celebrities, painted with disarming immediacy and humanity, between personal memory and America's social reality.", "histoire.p2": "'Where thoughts provoke', on view at the Musée national Picasso-Paris from 8 April to 6 September 2026, is his first major survey in France: around one hundred works — paintings, sculptures, installations — across two floors and thirteen rooms, conceived with the artist. The title comes from a 2015 painting, Where Thoughts provoke, getting deep in shallow water.", "histoire.p3": "The show is part of the museum's cycle on Picasso's reception in America, after Faith Ringgold, Jackson Pollock and Philip Guston. Taylor had a major retrospective at MOCA Los Angeles in 2022, then at the Whitney in New York in 2023; his works are held by the Met, MoMA and the Studio Museum in Harlem.", "hl1.t": "Screaming Head (1990)", "hl1.p": "A painted scream from the very start of his career, setting the tone: raw, direct, impossible to forget.", "hl2.t": "It's like a jungle (2011)", "hl2.p": "Brooms, crates, salvaged objects: a whole installation bringing the American street into the museum.", "hl3.t": "The title painting (2015)", "hl3.p": "Where Thoughts provoke, getting deep in shallow water: understated, almost hidden in the hang — and yet everything is there.", "nav.works": "Works", "nav.about": "About", "o.back": "The collection", "tab.regard": "My eye", "tab.histoire": "History & context", "tab.images": "In pictures", "ph.add": "Image to add to the repo:", "hl.title": "What stayed with me", "nav.prev": "Previous entry", "nav.next": "Next entry", "footer.copy": "A personal perspective on art that leaves a mark.", "footer.works": "Works →", "nav.prev.title": "The Philippe Jabre Collection", "nav.next.title": "O'Keeffe & Moore — Giants of Modern Art"}};
+
+    function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    function storeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+    function setLang(lang) {
+      storeSet("mart-lang", lang);
+      document.documentElement.lang = lang;
+      var d = I18N[lang];
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        if (d[key] !== undefined) el.innerHTML = d[key];
+      });
+      document.querySelectorAll(".lang-btn").forEach(function (b) {
+        b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+      });
+      document.title = d["page.title"];
+    }
+    document.querySelectorAll(".lang-btn").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+    });
+    setLang(storeGet("mart-lang") || "fr");
+
+    /* Barre de progression + nav au scroll */
+    var bar = document.getElementById("progressBar");
+    var nav = document.getElementById("mainNav");
+    window.addEventListener("scroll", function () {
+      var h = document.body.scrollHeight - window.innerHeight;
+      if (bar) bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
+      if (nav) nav.classList.toggle("scrolled", window.scrollY > 60);
+    }, { passive: true });
+
+    /* Transitions de page */
+    var overlay = document.getElementById("pageTransition");
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest ? e.target.closest("a.page-link") : null;
+      if (!link) return;
+      var href = link.getAttribute("href");
+      if (!href || href.charAt(0) === "#") return;
+      e.preventDefault();
+      if (overlay) overlay.classList.add("active");
+      setTimeout(function () { window.location.href = href; }, 360);
+    });
+    window.addEventListener("pageshow", function () {
+      if (overlay) overlay.classList.remove("active");
+    });
+
+    /* Apparition au scroll */
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) en.target.classList.add("visible"); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll(".reveal").forEach(function (el) { obs.observe(el); });
+
+    /* Onglets */
+    document.querySelectorAll(".tab").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".tab").forEach(function (b) { b.classList.remove("active"); });
+        document.querySelectorAll(".tab-content").forEach(function (c) { c.classList.remove("active"); });
+        btn.classList.add("active");
+        document.getElementById("tab-" + btn.getAttribute("data-tab")).classList.add("active");
+      });
+    });
+
+    /* Lightbox (image principale + galerie) */
+    var lb = document.getElementById("lightbox");
+    var lbImg = document.getElementById("lightboxImg");
+    var lbCap = document.getElementById("lightboxCaption");
+    function openLb(src, cap) {
+      lbImg.src = src; lbImg.alt = cap; lbCap.textContent = cap;
+      lb.classList.add("open"); document.body.style.overflow = "hidden";
+    }
+    function closeLb() { lb.classList.remove("open"); document.body.style.overflow = ""; }
+    var mainImg = document.getElementById("artImg");
+    var frame = document.getElementById("stageFrame");
+    function openMain() { if (!frame.classList.contains("empty")) openLb(mainImg.src, mainImg.alt); }
+    mainImg.addEventListener("click", openMain);
+    document.getElementById("focusBtn").addEventListener("click", openMain);
+    document.querySelectorAll(".gallery-grid .ph img").forEach(function (img) {
+      img.addEventListener("click", function () {
+        if (!img.parentElement.classList.contains("empty") && !img.closest(".ph").classList.contains("empty")) {
+          openLb(img.src, img.alt);
+        }
+      });
+    });
+    document.getElementById("lightboxClose").addEventListener("click", closeLb);
+    lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeLb(); });
+  })();
+  </script>
+</body>
+</html>
