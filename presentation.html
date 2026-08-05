@@ -6,14 +6,11 @@
   <title>M·Art — À propos</title>
   <meta name="description" content="M·Art — qui je suis, et pourquoi ce portfolio d'art personnel, tourné notamment vers les artistes femmes.">
   <meta name="theme-color" content="#1a1814">
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="M·Art — À propos">
   <meta property="og:description" content="Un regard personnel sur l'art qui marque.">
-  <meta property="og:image" content="https://flambardgautier-wq.github.io/M-Art/lady.png">
-
+  <meta property="og:image" content="https://m-art-portfolio.github.io/M-Art/lady.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1814'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-style='italic' fill='%23c4a06a' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -69,8 +66,8 @@
         <div class="art-divider"></div>
         <div class="about-body">
           <p data-i18n="about.p1">Je suis étudiante et passionnée d'art. À travers M·Art, j'ai voulu créer un espace personnel consacré aux œuvres qui me touchent, me questionnent et, selon moi, ont laissé une empreinte durable dans l'histoire de l'art.</p>
-          <p data-i18n="about.p2">Ce portfolio rassemble des œuvres que j'aime pour leur force visuelle, leur sens, mais aussi pour l'impact culturel qu'elles ont pu avoir à leur époque et au-delà. Mon regard s'oriente particulièrement vers <strong>les artistes femmes</strong>, qui ont su s'imposer dans un monde de l'art longtemps dominé par les hommes, souvent avec talent, audace et singularité.</p>
-          <p data-i18n="about.p3">Chaque œuvre est présentée avec deux entrées : <strong>mon regard</strong> — ce que je ressens, ce qui m'attire — et <strong>son histoire</strong> — l'artiste, le contexte, ce que l'œuvre a traversé.</p>
+          <p data-i18n="about.p2">Ce portfolio rassemble des œuvres et des expositions que j'aime pour leur force visuelle, leur sens, mais aussi pour l'impact culturel qu'elles ont pu avoir à leur époque et au-delà. Mon regard s'oriente particulièrement vers <strong>les artistes femmes</strong>, qui ont su s'imposer dans un monde de l'art longtemps dominé par les hommes, souvent avec talent, audace et singularité.</p>
+          <p data-i18n="about.p3">Chaque entrée est présentée avec trois volets : <strong>mon regard</strong> — ce que je ressens, ce qui m'attire —, <strong>son histoire</strong> — l'artiste, le contexte —, et <strong>des images</strong> de mes visites.</p>
         </div>
         <a href="index.html" class="hero-cta cta-light page-link">
           <span data-i18n="about.cta">Voir les œuvres</span>
@@ -89,46 +86,93 @@
     </div>
   </footer>
 
-  <script src="oeuvres.js"></script>
   <script>
-    // Textes propres à cette page (s'ajoutent aux textes communs de oeuvres.js)
-    const ABOUT = {
+  /* ============ Page 100% autonome — aucun fichier JS externe ============ */
+  (function () {
+    var I18N = {
       fr: {
+        "nav.works": "Œuvres",
+        "nav.about": "À propos",
         "about.eyebrow": "Portfolio artistique",
-        "about.title":   "<em>À propos</em>",
-        "about.tag":     "À propos",
+        "about.title": "<em>À propos</em>",
+        "about.tag": "À propos",
         "about.heading": "Bienvenue<br><em>sur M·Art</em>",
-        "about.p1":      "Je suis étudiante et passionnée d'art. À travers M·Art, j'ai voulu créer un espace personnel consacré aux œuvres qui me touchent, me questionnent et, selon moi, ont laissé une empreinte durable dans l'histoire de l'art.",
-        "about.p2":      "Ce portfolio rassemble des œuvres que j'aime pour leur force visuelle, leur sens, mais aussi pour l'impact culturel qu'elles ont pu avoir à leur époque et au-delà. Mon regard s'oriente particulièrement vers <strong>les artistes femmes</strong>, qui ont su s'imposer dans un monde de l'art longtemps dominé par les hommes, souvent avec talent, audace et singularité.",
-        "about.p3":      "Chaque œuvre est présentée avec deux entrées : <strong>mon regard</strong> — ce que je ressens, ce qui m'attire — et <strong>son histoire</strong> — l'artiste, le contexte, ce que l'œuvre a traversé.",
-        "about.cta":     "Voir les œuvres"
+        "about.p1": "Je suis étudiante et passionnée d'art. À travers M·Art, j'ai voulu créer un espace personnel consacré aux œuvres qui me touchent, me questionnent et, selon moi, ont laissé une empreinte durable dans l'histoire de l'art.",
+        "about.p2": "Ce portfolio rassemble des œuvres et des expositions que j'aime pour leur force visuelle, leur sens, mais aussi pour l'impact culturel qu'elles ont pu avoir à leur époque et au-delà. Mon regard s'oriente particulièrement vers <strong>les artistes femmes</strong>, qui ont su s'imposer dans un monde de l'art longtemps dominé par les hommes, souvent avec talent, audace et singularité.",
+        "about.p3": "Chaque entrée est présentée avec trois volets : <strong>mon regard</strong> — ce que je ressens, ce qui m'attire —, <strong>son histoire</strong> — l'artiste, le contexte —, et <strong>des images</strong> de mes visites.",
+        "about.cta": "Voir les œuvres",
+        "footer.copy": "Un regard personnel sur l'art qui marque.",
+        "footer.works": "Œuvres →",
+        "page.title": "M·Art — À propos"
       },
       en: {
+        "nav.works": "Works",
+        "nav.about": "About",
         "about.eyebrow": "Artistic portfolio",
-        "about.title":   "<em>About</em>",
-        "about.tag":     "About",
+        "about.title": "<em>About</em>",
+        "about.tag": "About",
         "about.heading": "Welcome<br><em>to M·Art</em>",
-        "about.p1":      "I am a student with a passion for art. Through M·Art, I wanted to create a personal space dedicated to works that move me, question me and, in my view, have left a lasting mark on the history of art.",
-        "about.p2":      "This portfolio brings together works I love for their visual power, their meaning, and the cultural impact they had in their time and beyond. My attention turns especially to <strong>women artists</strong>, who carved their place in an art world long dominated by men — often with talent, boldness and singularity.",
-        "about.p3":      "Each work comes with two entries: <strong>my eye</strong> — what I feel, what draws me in — and <strong>its history</strong> — the artist, the context, what the work has been through.",
-        "about.cta":     "See the works"
+        "about.p1": "I am a student with a passion for art. Through M·Art, I wanted to create a personal space dedicated to works that move me, question me and, in my view, have left a lasting mark on the history of art.",
+        "about.p2": "This portfolio brings together works and exhibitions I love for their visual power, their meaning, and the cultural impact they had in their time and beyond. My attention turns especially to <strong>women artists</strong>, who carved their place in an art world long dominated by men — often with talent, boldness and singularity.",
+        "about.p3": "Each entry comes in three parts: <strong>my eye</strong> — what I feel, what draws me in —, <strong>its history</strong> — the artist, the context —, and <strong>pictures</strong> from my visits.",
+        "about.cta": "See the works",
+        "footer.copy": "A personal perspective on art that leaves a mark.",
+        "footer.works": "Works →",
+        "page.title": "M·Art — About"
       }
     };
 
+    function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    function storeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
     function setLang(lang) {
-      applyUI(lang, ABOUT);
-      document.title = lang === "fr" ? "M·Art — À propos" : "M·Art — About";
+      storeSet("mart-lang", lang);
+      document.documentElement.lang = lang;
+      var d = I18N[lang];
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {
+        var key = el.getAttribute("data-i18n");
+        if (d[key] !== undefined) el.innerHTML = d[key];
+      });
+      document.querySelectorAll(".lang-btn").forEach(function (b) {
+        b.classList.toggle("active", b.getAttribute("data-lang") === lang);
+      });
+      document.title = d["page.title"];
     }
+    document.querySelectorAll(".lang-btn").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.getAttribute("data-lang")); });
+    });
+    setLang(storeGet("mart-lang") || "fr");
 
-    // Apparition au scroll
-    const observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { if (e.isIntersecting) e.target.classList.add("visible"); });
+    /* Barre de progression + nav au scroll */
+    var bar = document.getElementById("progressBar");
+    var nav = document.getElementById("mainNav");
+    window.addEventListener("scroll", function () {
+      var h = document.body.scrollHeight - window.innerHeight;
+      if (bar) bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
+      if (nav) nav.classList.toggle("scrolled", window.scrollY > 60);
+    }, { passive: true });
+
+    /* Transitions de page */
+    var overlay = document.getElementById("pageTransition");
+    document.addEventListener("click", function (e) {
+      var link = e.target.closest ? e.target.closest("a.page-link") : null;
+      if (!link) return;
+      var href = link.getAttribute("href");
+      if (!href || href.charAt(0) === "#") return;
+      e.preventDefault();
+      if (overlay) overlay.classList.add("active");
+      setTimeout(function () { window.location.href = href; }, 360);
+    });
+    window.addEventListener("pageshow", function () {
+      if (overlay) overlay.classList.remove("active");
+    });
+
+    /* Apparition au scroll */
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) en.target.classList.add("visible"); });
     }, { threshold: 0.08 });
-    document.querySelectorAll(".reveal").forEach(function (el) { observer.observe(el); });
-
-    initChrome();
-    initLangButtons(setLang);
-    setLang(getLang());
+    document.querySelectorAll(".reveal").forEach(function (el) { obs.observe(el); });
+  })();
   </script>
 </body>
 </html>
